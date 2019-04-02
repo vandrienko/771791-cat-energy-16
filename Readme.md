@@ -1,7 +1,11 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vladimir Andrienko](https://up.htmlacademy.ru/adaptive/16/user/771791).
+<<<<<<< HEAD
 * Наставник: [Дмитрий Вашкевич](https://htmlacademy.ru/profile/id116959).
+=======
+* Наставник: `Неизвестно`.
+>>>>>>> b7df71245f13bca62df4055c64e8eae5e0eb7d07
 
 ---
 
