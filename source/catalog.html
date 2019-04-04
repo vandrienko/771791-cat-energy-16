@@ -30,8 +30,8 @@
         <!-- Секция Каталог продукции  -->
         <section class="catalog">
           <h2 class="catalog__title">Каталог продукции</h2>
-          <ul class="catalog__list">
-            <li class="catalog__item">
+          <div class="catalog__list">
+            <article class="catalog__item">
               <div class="product">
                 <img class="product__image" src="http://placehold.it/150x100" alt="Изображение товара" width="" height="">
                 <div class="product__info">
@@ -53,8 +53,8 @@
                 </div>
                 <a class="button product__order" href="">заказать</a>
               </div>
-            </li>
-            <li class="catalog__item">
+            </article>
+            <article class="catalog__item">
               <div class="product">
                 <img class="product__image" src="http://placehold.it/150x100" alt="Изображение товара" width="" height="">
                 <div class="product__info">
@@ -76,8 +76,8 @@
                 </div>
                 <a class="button product__order" href="">заказать</a>
               </div>
-            </li>
-            <li class="catalog__item">
+            </article>
+            <article class="catalog__item">
               <div class="product">
                 <img class="product__image" src="http://placehold.it/150x100" alt="Изображение товара" width="" height="">
                 <div class="product__info">
@@ -99,8 +99,8 @@
                 </div>
                 <a class="button product__order" href="">заказать</a>
               </div>
-            </li>
-            <li class="catalog__item">
+            </article>
+            <article class="catalog__item">
               <div class="product">
                 <img class="product__image" src="http://placehold.it/150x100" alt="Изображение товара" width="" height="">
                 <div class="product__info">
@@ -122,8 +122,8 @@
                 </div>
                 <a class="button product__order" href="">заказать</a>
               </div>
-            </li>
-            <li class="catalog__item">
+            </article>
+            <article class="catalog__item">
               <div class="product">
                 <img class="product__image" src="http://placehold.it/150x100" alt="Изображение товара" width="" height="">
                 <div class="product__info">
@@ -145,8 +145,8 @@
                 </div>
                 <a class="button product__order" href="">заказать</a>
               </div>
-            </li>
-            <li class="catalog__item">
+            </article>
+            <article class="catalog__item">
               <div class="product">
                 <img class="product__image" src="http://placehold.it/150x100" alt="Изображение товара" width="" height="">
                 <div class="product__info">
@@ -168,8 +168,8 @@
                 </div>
                 <a class="button product__order" href="">заказать</a>
               </div>
-            </li>
-            <li class="catalog__item">
+            </article>
+            <article class="catalog__item">
               <div class="product">
                 <img class="product__image" src="http://placehold.it/150x100" alt="Изображение товара" width="" height="">
                 <div class="product__info">
@@ -191,8 +191,8 @@
                 </div>
                 <a class="button product__order" href="">заказать</a>
               </div>
-            </li>
-            <li class="catalog__item">
+            </article>
+            <article class="catalog__item">
               <div class="more-product">
                 <span class="more-product__icon"></span>
                 <div class="more-product__info">
@@ -201,32 +201,65 @@
                 </div>
                 <a class="button product__more" href="">Показать все</a>
               </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Секция бонус -->
-        <section class="bonus">
-          <h2 class="visually-hidden">Наша специальное предложение.</h2>
-          <div>
-            <p class="bonus__text">Закажите все  и получите чехол для кота в подарок!</p>
+            </article>
           </div>
         </section>
 
         <!-- Секция Дополнительный Каталог продукции  -->
         <section class="additional-product">
           <h2 class="additional-product__header">Дополнительные товары</h2>
-          <ul class="additional-product__list">
-            <li class="additional-product__item">
-              <h3 class="additional-product__title">Сахарозаменитель</h3>
-              <dl class="additional-product__price">
-                <dt class="additional-product__title">1 упаковка (100 г)</dt>
-                <dd class="additional-product__value">200 Р.</dd>
-              </dl>
+          <div class="additional-product__list">
+            <article class="additional-product__item">
+              <h3 class="additional-product__title">Сахарозаменитель</h3>              
+              <table class="product__details">
+                  <tr class="additional-product__price">
+                    <td class="additional-product__data additional-product__title">1 упаковка (100 г)</td>
+                    <td class="additional-product__data additional-product__value">200 Р.</td>
+                  </tr>
+              </table> 
               <a class="additional-product__order" href="">заказать</a>
-            </li>
-          </ul>
+            </article>
+            <article class="additional-product__item">
+              <h3 class="additional-product__title">Питьевая вода</h3>              
+              <table class="product__details">
+                  <tr class="additional-product__price">
+                    <td class="additional-product__data additional-product__title">5 литров</td>
+                    <td class="additional-product__data additional-product__value">50 Р.</td>
+                  </tr>
+              </table> 
+              <a class="additional-product__order" href="">заказать</a>
+            </article>
+            <article class="additional-product__item">
+              <h3 class="additional-product__title">Молоко</h3>              
+              <table class="product__details">
+                  <tr class="additional-product__price">
+                    <td class="additional-product__data additional-product__title">1 литр</td>
+                    <td class="additional-product__data additional-product__value">100 Р.</td>
+                  </tr>
+              </table> 
+              <a class="additional-product__order" href="">заказать</a>
+            </article>
+            <article class="additional-product__item">
+              <h3 class="additional-product__title">Витамины</h3>              
+              <table class="product__details">
+                  <tr class="additional-product__price">
+                    <td class="additional-product__data additional-product__title">1 упаковка (30 г)</td>
+                    <td class="additional-product__data additional-product__value">300 Р.</td>
+                  </tr>
+              </table> 
+              <a class="additional-product__order" href="">заказать</a>
+            </article>
+          </div>
         </section>
+
+        <!-- Секция бонус -->
+        <section class="bonus">
+            <h2 class="visually-hidden">Наша специальное предложение.</h2>
+            <div>
+              <p class="bonus__text">Закажите все  и получите чехол для кота в подарок!</p>
+            </div>
+          </section>
+          
         <!-- Секция партнеры -->
         <section class="partners">
             <h2 class="partners__title">Приглашаем  к сотрудничеству  дилеров!</h2>
