@@ -75,14 +75,52 @@
               <p class="column-contact__item-phone item-phone">
                 <label class="item-phone--phone" for="contact-phone">Телефон:*</label>
                 <input class="item-phone--input item-phone--input-age" type="text" placeholder="8 (960) 900-60-90" id="contact-phone">
-                <a class=" item-phone__phone-link phone-link" href=""></a>
+                <a class="item-phone__phone-link phone-link" href=""></a>
               </p>
             </fieldset>
             <fieldset class="form__column-comment column-comment">
-              <h3 class="column-comment--title">Комментарий</h3>
+              <label class="column-comment--label" for="comment-textarea">Комментарий</label>
+              <textarea class="column-comment--textarea" name="comment-textarea" id="comment-textarea" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+            <fieldset class="form__column-additional column-additional">
+              <h3>Дополнительно</h3>
+              <ul class="column-additional__additional-list additional-list">
+                <li class="additional-list__additional-item additional-item">
+                    <input class="visually-hidden" type="checkbox" id="checkbox-sweetener" name="checkbox" value="checkbox-sweetener" checked>
+                    <label class="additional-item--label" for="checkbox-sweetener">                                  
+                      Сахарозаменитель
+                    </label>                              
+                </li>
+                <li class="additional-list__additional-item additional-item">
+                    <input class="visually-hidden" type="checkbox" id="checkbox-water" name="checkbox-water" value="checkbox-water">
+                    <label class="additional-item--label" for="checkbox-water">
+                      Питьевая вода
+                    </label>
+                </li>
+                <li class="additional-list__additional-item additional-item">
+                    <input class="visually-hidden" type="checkbox" id="checkbox-milk" name="checkbox-milk" value="checkbox-milk">
+                    <label class="additional-item--label" for="checkbox-milk">                               
+                      Молоко
+                    </label>
+                </li>
+                <li class="additional-list__additional-item additional-item">
+                  <input class="visually-hidden" type="checkbox" id="checkbox-vitamin" name="checkbox-vitamin" value="checkbox-vitamin">
+                  <label class="additional-item--label" for="checkbox-vitamin">                               
+                    Витамины
+                  </label>
+                </li>
+              </ul>
             </fieldset>
           </div>
+          <button class="button form__send-application" type="submit">Отправить заявку</button>
+          <b class="form__obligatory">* — Обязательные поля</b>
         </form>
+      </section>
+      
+      <!-- Секция партнеры -->
+      <section class="partners">
+        <h2 class="partners__title">Приглашаем  к сотрудничеству  дилеров!</h2>
+        <p class="partners__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
       </section>
     </main>
 
