@@ -25,27 +25,69 @@
       </nav>
     </header>
 
-    <main class="page-main">     
-      <h1 class="page-main__header">Подбор программы</h1>  
+    <main class="page-main">
+      <h1 class="page-main__header">Подбор программы</h1>
       <p class="page-main__slogan">
         Заполните анкету и мы подберем программу питания для вашего кота
       </p>
       <!-- Секция анкета -->
       <section class="questionary">
-      <h2 class="visually-hidden">Форма заполнения анкеты.</h2> 
-        <form class="questionary__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="questionary__item-form item-form">
-          <label class="item-form__label">
-            Имя:*
-            <input class="item-form__input item-form__input-name" type="text">
-          </label>         
-        </p>
+        <h2 class="visually-hidden">Форма заполнения анкеты.</h2>
+        <form class="questionary__form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form--container">
+            <fieldset class="form__column column">
+              <p class="column__item-name item-name">
+                <label class="item-name--label" for="input-name">Имя:*</label>
+                <input class="item-name--input item-name--input-name" type="text" placeholder="Барсик" id="input-name">
+              </p>
+              <p class="column__item-weight item-weight">
+                <label class="item-weight--label" for="input-weight">Вес (кг):*</label>
+                <input class="item-weight--input item-weight--input-weight" type="text" placeholder="7" id="input-weight">
+              </p>
+              <p class="column__item-age item-age">
+                <label class="item-age--label" for="questionary-age">Возраст (лет):</label>
+                <input class="item-age--input item-age--input-age" type="text" placeholder="7" id="questionary-age">
+              </p>
+            </fieldset>
+            <fieldset class="form__radio radio">
+              <ul class="radio__list">
+                  <li class="radio__item">
+                      <input class="visually-hidden" type="radio" name="application" value="weight-loss" id="weight-loss" checked="">
+                      <label class="radio__item--label" for="weight-loss">Похудение</label>
+                  </li>
+                  <li class="radio__item">
+                      <input class="visually-hidden" type="radio" name="application" value="mass" id="mass">
+                      <label class="radio__item--label" for="mass">Набор массы</label>
+                  </li>
+                  <li class="radio__item">
+                      <input class="visually-hidden" type="radio" name="application" value="advice" id="advice">
+                      <label class="radio__item--label" for="advice">Не знаю (Нужен ваш совет)</label>
+                  </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__column-contact column-contact">
+              <h3 class="column-contact--title">Контактные данные (владельца кота)</h3>
+              <p class="column-contact__item-email item-email">
+                <label class="item-email--label" for="contact-email">E-mail:*</label>
+                <input class="item-email--input item-email--input-age" type="text" placeholder="kuklachev@gmail.com" id="contact-email">
+                <a class=" item-email__email-link email-link" href=""></a>
+              </p>
+              <p class="column-contact__item-phone item-phone">
+                <label class="item-phone--phone" for="contact-phone">Телефон:*</label>
+                <input class="item-phone--input item-phone--input-age" type="text" placeholder="8 (960) 900-60-90" id="contact-phone">
+                <a class=" item-phone__phone-link phone-link" href=""></a>
+              </p>
+            </fieldset>
+            <fieldset class="form__column-comment column-comment">
+              <h3 class="column-comment--title">Комментарий</h3>
+            </fieldset>
+          </div>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo-link logo-link" href="">         
+      <a class="page-footer__logo-link logo-link" href="">
         <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Логотип кэт энерджи">
       </a>
       <div class="page-footer__social social">
@@ -59,12 +101,12 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
-        </ul> 
-      </div>  
+        </ul>
+      </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">HTML Academy:</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>     
-    </footer> 
+      </div>
+    </footer>
   </body>
 </html>
