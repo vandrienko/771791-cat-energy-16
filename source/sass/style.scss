@@ -1,5 +1,7 @@
 @import "global.scss";
+@import "outline.scss";
 @import "blocks/button.scss";
+@import "blocks/container.scss";
 // Блок header
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -21,6 +23,7 @@
 // Секция Карта
 @import "blocks/map.scss";
 // Блок footer
-@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/logo-link.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
