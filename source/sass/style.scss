@@ -1,1 +1,26 @@
-body { background: yellow }
+@import "global.scss";
+@import "blocks/button.scss";
+// Блок header
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+// Блок  main
+@import "blocks/_page-main.scss";
+// Секция вводной информации
+@import "blocks/intro.scss";
+// Секция программы питание
+@import "blocks/program.scss";
+// Секция преимуществ.
+@import "blocks/advantages.scss";
+//Секция живой пример
+@import "blocks/example.scss";
+@import "blocks/achievement.scss";
+@import "blocks/comparisons.scss";
+// Секция партнеры 
+@import "blocks/partners.scss";
+// Секция Карта
+@import "blocks/map.scss";
+// Блок footer
+@import "blocks/map.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
