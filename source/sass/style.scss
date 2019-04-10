@@ -1,13 +1,13 @@
-// @import "global.scss";
-// @import "outline.scss";
-// @import "blocks/button.scss";
+@import "global.scss";
+@import "outline.scss";
+@import "blocks/button.scss";
 @import "blocks/container.scss";
 // Блок header
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/site-list.scss";
+@import "blocks/_page-header.scss";
+@import "blocks/_main-nav.scss";
+@import "blocks/_site-list.scss";
 // Блок  main
-@import "blocks/page-main.scss";
+@import "blocks/_page-main.scss";
 // Секция вводной информации
 @import "blocks/intro.scss";
 // Секция программы питание
@@ -16,18 +16,17 @@
 @import "blocks/advantages.scss";
 //Секция живой пример
 @import "blocks/example.scss";
-@import "blocks/achievement.scss";
 @import "blocks/comparisons.scss";
 // Секция партнеры
 @import "blocks/partners.scss";
 // Секция Карта
 @import "blocks/map.scss";
 // Блок footer
-@import "blocks/page-footer.scss";
-@import "blocks/logo-link.scss";
+@import "blocks/_page-footer.scss";
+@import "blocks/_logo-link.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 // Каталог продукции
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
-@import "blocks/more-product.scss";
+@import "blocks/_more-product.scss";
