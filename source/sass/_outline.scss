@@ -1,0 +1,56 @@
+.container {
+  outline: 5px rgb(255, 17, 0) solid;
+  height: 100%;
+}
+
+.page-header,
+.page-main,
+.page-footer {
+  outline: 3px rgb(0, 38, 255) solid;
+  min-height: 30px;
+}
+
+.main-nav,
+.intro,
+.program,
+.advantages,
+.example,
+.partners,
+.map,
+.page-footer__logo-link,
+.catalog,
+.additional-product {
+  outline: 3px rgb(255, 0, 157) solid;
+  min-height: 30px;
+}
+
+.page-header__logo-link,
+.intro__wrapper,
+.program__item--slim,
+.advantages__list,
+.example__title,
+.partners__title,
+.page-footer__social,
+.product,
+.additional-product__list {
+  outline: 3px rgb(15, 193, 206) solid;
+  min-height: 30px;
+}
+
+.main-nav__toggle,
+.program__item--pro,
+.example__text,
+.example__achievements,
+.advantages__title,
+.partners__address,
+.social__list,
+.additional-product__item {
+  outline: 2px rgb(238, 255, 0) solid;
+  min-height: 30px;
+}
+
+.site-list,
+.page-footer__copyright {
+  outline: 2px rgb(30, 255, 0) solid;
+  min-height: 30px;
+}
