@@ -1,7 +1,43 @@
 .main-nav {
+  display: flex;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
 }
+
+.main-nav__toggle {
+  // position: absolute;
+  // top: 5px;
+  // right: 45px;
+  // width: 24px;
+  // height: 24px;
+  // background-color: #ffffff;
+  // border: none;
+  // cursor: pointer;
+  // opacity: 0.3;
+}
+
+// .main-nav__toggle::before {
+//   position: absolute;
+//   content: "";
+//   top: 12px;
+//   left: 0;
+//   width: 24px;
+//   height: 2px;
+//   background-color: #111111;
+//   transform: rotate(45deg);
+//   }
+
+//   .main-nav__toggle::after {
+//   position: absolute;
+//   content: "";
+//   top: 12px;
+//   left: 0;
+//   width: 24px;
+//   height: 2px;
+//   background-color: #111111;
+//   transform: rotate(-45deg);
+//   }

@@ -12,7 +12,9 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи" width="190" height="30">
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden main-nav__toggle-icon">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -39,7 +41,7 @@
           <h2 class="visually-hidden">Форма заполнения анкеты.</h2>
           <form class="questionary__form form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__container">
-              <fieldset class="form__column column">
+              <fieldset class="form__column form-item column">
                 <p class="column__item item-name">
                   <label class="item__label label-name" for="input-name">Имя:*</label>
                   <input class="item__input input-name" type="text" placeholder="Барсик" id="input-name">
@@ -53,7 +55,7 @@
                   <input class="item__input input-age" type="text" placeholder="7" id="questionary-age">
                 </p>
               </fieldset>
-              <fieldset class="form__radio radio">
+              <fieldset class="form__radio form-item  radio">
                 <ul class="radio__list">
                     <li class="radio__item item-label">
                         <input class="visually-hidden" type="radio" name="application" value="weight-loss" id="weight-loss" checked="">
@@ -69,7 +71,7 @@
                     </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__column-contact column-contact">
+              <fieldset class="form__column-contact form-item column-contact">
                 <h3 class="column-contact__contact-title">Контактные данные (владельца кота)</h3>
                 <p class="column-contact__item item-email">
                   <label class="item__label label-email" for="contact-email">E-mail:*</label>
@@ -82,11 +84,11 @@
                   <span class="item__icon phone-icon" href=""></span>
                 </p>
               </fieldset>
-              <fieldset class="form__column-comment column-comment">
+              <fieldset class="form__column-comment form-item column-comment">
                 <label class="column-comment__label-comment" for="comment-textarea">Комментарий</label>
                 <textarea class="column-comment__textarea-comment" name="comment-textarea" id="comment-textarea" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
-              <fieldset class="form__column-additional column-additional">
+              <fieldset class="form__column-additional form-item column-additional">
                 <h3 class="column-additional__contact-title">Дополнительно</h3>
                 <ul class="column-additional__additional-list additional-list">
                   <li class="additional-list__additional-item additional-item">
