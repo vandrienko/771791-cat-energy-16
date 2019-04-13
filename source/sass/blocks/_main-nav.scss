@@ -29,9 +29,9 @@
   height: 2px;
   background-color: #111111;
   transform: rotate(45deg);
-  }
+}
 
-  .main-nav__toggle::after {
+.main-nav__toggle::after {
   position: absolute;
   content: "";
   top: 12px;
@@ -40,4 +40,4 @@
   height: 2px;
   background-color: #111111;
   transform: rotate(-45deg);
-  }
+}
