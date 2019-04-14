@@ -11,15 +11,24 @@
   color: #ffffff;
   text-transform: uppercase;
 
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-color: #63a73a;
 }
 
 .intro__wrapper {
+  // width: 975px;
   // padding-bottom: 20px;
   // background-color: #c9c3c3;
+}
+
+.intro_background {
+  min-height: 300px;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  // background-position: -60px -80px;
+  // z-index: 2;
+  background-repeat: no-repeat;
+  background-color: #63a73a;
+  // margin-top: -465px;
+  padding-bottom: 200px;
 }
 
 .intro__title {
@@ -41,7 +50,57 @@
 }
 
 .intro__link {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   vertical-align: bottom;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+
+    // background-position: -60px right;
+  }
+
+  .intro_background {
+    display: none;
+  }
+
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: stretch;
+    align-items: stretch;
+    background-image: url("../../img/index-can-mobile@1x.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: #63a73a;
+    padding-left: 90px;
+    height: 850px;
+    // width: 708px;
+    color: #111111;
+  }
+
+  .intro__title {
+    width: 425px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .intro__slogan {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro__link {
+    width: 245px;
+    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

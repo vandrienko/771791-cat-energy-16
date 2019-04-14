@@ -1,56 +1,56 @@
-// .container {
-//   outline: 5px rgb(255, 17, 0) solid;
-//   height: 100%;
+// Шапка
+.page-header {
+  outline: 2px rgb(0, 38, 255) solid;
+  outline-offset: -2px;
+  height: 265px;
+
+  // background-color: rgb(255, 127, 127);
+}
+
+.page-header__wrapper {
+  outline: 3px rgb(0, 255, 234) solid;
+  outline-offset: -3px;
+}
+
+.page-header__logo-link {
+  outline: 3px rgb(21, 255, 0) solid;
+  outline-offset: -3px;
+}
+
+.main-nav {
+  outline: 4px rgb(229, 255, 0) solid;
+  outline-offset: -2px;
+}
+
+.site-list__item {
+  outline: 4px rgb(247, 0, 255) solid;
+  outline-offset: -2px;
+}
+
+// Секция вводной информации
+// .page-header {
+//   outline: 2px rgb(0, 38, 255) solid;
+//   outline-offset: -2px;
+//   height: 265px;
 // }
 
-// .page-header,
-// .page-main,
-// .page-footer {
-//   outline: 3px rgb(0, 38, 255) solid;
-//   min-height: 30px;
+// .page-header__wrapper {
+//   outline: 3px rgb(0, 255, 234) solid;
+//   outline-offset: -3px;
+//   height: 265px;
 // }
 
-// .main-nav,
-// .intro,
-// .program,
-// .advantages,
-// .example,
-// .partners,
-// .map,
-// .page-footer__logo-link,
-// .catalog,
-// .additional-product {
-//   outline: 3px rgb(255, 0, 157) solid;
-//   min-height: 30px;
+// .page-header__logo-link {
+//   outline: 3px rgb(21, 255, 0) solid;
+//   outline-offset: -3px;
 // }
 
-// .page-header__logo-link,
-// .intro__wrapper,
-// .program__item--slim,
-// .advantages__list,
-// .example__title,
-// .partners__title,
-// .page-footer__social,
-// .product,
-// .additional-product__list {
-//   outline: 3px rgb(15, 193, 206) solid;
-//   min-height: 30px;
+// .main-nav {
+//   outline: 4px rgb(229, 255, 0) solid;
+//   outline-offset: -2px;
 // }
 
-// .main-nav__toggle,
-// .program__item--pro,
-// .example__text,
-// .example__achievements,
-// .advantages__title,
-// .partners__address,
-// .social__list,
-// .additional-product__item {
-//   outline: 2px rgb(238, 255, 0) solid;
-//   min-height: 30px;
-// }
-
-// .site-list,
-// .page-footer__copyright {
-//   outline: 2px rgb(30, 255, 0) solid;
-//   min-height: 30px;
+// .site-list__item {
+//   outline: 4px rgb(247, 0, 255) solid;
+//   outline-offset: -2px;
 // }

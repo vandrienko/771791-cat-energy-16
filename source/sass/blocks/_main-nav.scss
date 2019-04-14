@@ -10,7 +10,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 30px;
+  top: 18px;
   right: 20px;
   width: 24px;
   height: 24px;
@@ -41,3 +41,10 @@
   background-color: #111111;
   transform: rotate(-45deg);
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
