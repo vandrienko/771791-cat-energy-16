@@ -1,3 +1,20 @@
 .partners {
-  // test
+  padding: 0 20px;
+}
+
+.partners__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.partners__address {
+  margin: 0;
+  font-family: "Arial Narrow", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
 }

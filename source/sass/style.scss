@@ -2,32 +2,32 @@
 @import "outline.scss";
 @import "blocks/button.scss";
 @import "blocks/container.scss";
-// Блок header
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/site-list.scss";
-// Блок  main
+@import "blocks/_page-header.scss";
+@import "blocks/_logo-link.scss";
+@import "blocks/_main-nav.scss";
+@import "blocks/_site-list.scss";
 @import "blocks/_page-main.scss";
-// Секция вводной информации
 @import "blocks/intro.scss";
-// Секция программы питание
 @import "blocks/program.scss";
-// Секция преимуществ.
 @import "blocks/advantages.scss";
-//Секция живой пример
 @import "blocks/example.scss";
 @import "blocks/achievement.scss";
 @import "blocks/comparisons.scss";
-// Секция партнеры
 @import "blocks/partners.scss";
-// Секция Карта
 @import "blocks/map.scss";
-// Блок footer
-@import "blocks/page-footer.scss";
-@import "blocks/logo-link.scss";
+@import "blocks/_page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-// Каталог продукции
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
-@import "blocks/more-product.scss";
+@import "blocks/_more-product.scss";
+@import "blocks/_additional-product.scss";
+@import "blocks/bonus.scss";
+@import "blocks/form.scss";
+@import "blocks/_form-item.scss";
+@import "blocks/column.scss";
+// @import "blocks/questionary.scss";
+@import "blocks/radio.scss";
+@import "blocks/_column-contact.scss";
+@import "blocks/_column-comment.scss";
+@import "blocks/_column-additional.scss";

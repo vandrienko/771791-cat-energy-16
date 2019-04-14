@@ -12,7 +12,9 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи" width="190" height="30">
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden main-nav__toggle-icon">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -28,94 +30,98 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__header">Подбор программы</h1>
-      <p class="page-main__slogan">
-        Заполните анкету и мы подберем программу питания для вашего кота
-      </p>
-      <!-- Секция анкета -->
-      <section class="questionary">
-        <h2 class="visually-hidden">Форма заполнения анкеты.</h2>
-        <form class="questionary__form form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__container">
-            <fieldset class="form__column column">
-              <p class="column__item-name item-name">
-                <label class="item-name__label-name label-name" for="input-name">Имя:*</label>
-                <input class="item-name__input-name input-name" type="text" placeholder="Барсик" id="input-name">
-              </p>
-              <p class="column__item-weight item-weight">
-                <label class="item-weight__label-weight label-weight" for="input-weight">Вес (кг):*</label>
-                <input class="item-weight__input-weight input-weight" type="text" placeholder="7" id="input-weight">
-              </p>
-              <p class="column__item-age item-age">
-                <label class="item-age__label-age label-age" for="questionary-age">Возраст (лет):</label>
-                <input class="item-age__input-age input-age" type="text" placeholder="7" id="questionary-age">
-              </p>
-            </fieldset>
-            <fieldset class="form__radio radio">
-              <ul class="radio__list">
-                  <li class="radio__item item-label">
-                      <input class="visually-hidden" type="radio" name="application" value="weight-loss" id="weight-loss" checked="">
-                      <label class="radio__item-label" for="weight-loss">Похудение</label>
+      <!-- <div class="container"> -->
+        <h1 class="page-main__header">Подбор программы</h1>
+        <p class="page-main__slogan">
+          Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+        <!-- Секция анкета -->
+        <section class="questionary">
+          <div class="container">
+          <h2 class="visually-hidden">Форма заполнения анкеты.</h2>
+          <form class="questionary__form form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__container">
+              <fieldset class="form__column form-item column">
+                <p class="column__item item-name">
+                  <label class="item__label label-name" for="input-name">Имя:*</label>
+                  <input class="item__input input-name" type="text" placeholder="Барсик" id="input-name">
+                </p>
+                <p class="column__item item-weight">
+                  <label class="item__label label-weight" for="input-weight">Вес (кг):*</label>
+                  <input class="item__input input-weight" type="text" placeholder="7" id="input-weight">
+                </p>
+                <p class="column__item item-age">
+                  <label class="item__label label-age" for="questionary-age">Возраст (лет):</label>
+                  <input class="item__input input-age" type="text" placeholder="7" id="questionary-age">
+                </p>
+              </fieldset>
+              <fieldset class="form__radio form-item  radio">
+                <ul class="radio__list">
+                    <li class="radio__item item-label">
+                        <input class="visually-hidden" type="radio" name="application" value="weight-loss" id="weight-loss" checked="">
+                        <label class="radio__item-label" for="weight-loss">Похудение</label>
+                    </li>
+                    <li class="radio__item item-label">
+                        <input class="visually-hidden" type="radio" name="application" value="mass" id="mass">
+                        <label class="radio__item-label" for="mass">Набор массы</label>
+                    </li>
+                    <li class="radio__item item-label">
+                        <input class="visually-hidden" type="radio" name="application" value="advice" id="advice">
+                        <label class="radio__item-label" for="advice">Не знаю (Нужен ваш совет)</label>
+                    </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__column-contact form-item column-contact">
+                <h3 class="column-contact__contact-title">Контактные данные (владельца кота)</h3>
+                <p class="column-contact__item item-email">
+                  <label class="item__label label-email" for="contact-email">E-mail:*</label>
+                  <input class="item__input input-email" type="text" placeholder="kuklachev@gmail.com" id="contact-email">
+                  <span class=" item__icon email-icon" href=""></span>
+                </p>
+                <p class="column-contact__item item-phone">
+                  <label class="item__label label-phone" for="contact-phone">Телефон:*</label>
+                  <input class="item__input input-phone" type="text" placeholder="8 (960) 900-60-90" id="contact-phone">
+                  <span class="item__icon phone-icon" href=""></span>
+                </p>
+              </fieldset>
+              <fieldset class="form__column-comment form-item column-comment">
+                <label class="column-comment__label-comment" for="comment-textarea">Комментарий</label>
+                <textarea class="column-comment__textarea-comment" name="comment-textarea" id="comment-textarea" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </fieldset>
+              <fieldset class="form__column-additional form-item column-additional">
+                <h3 class="column-additional__contact-title">Дополнительно</h3>
+                <ul class="column-additional__additional-list additional-list">
+                  <li class="additional-list__additional-item additional-item">
+                      <input class="visually-hidden" type="checkbox" id="checkbox-sweetener" name="checkbox" value="checkbox-sweetener" checked>
+                      <label class="additional-item__label" for="checkbox-sweetener">Сахарозаменитель</label>
                   </li>
-                  <li class="radio__item item-label">
-                      <input class="visually-hidden" type="radio" name="application" value="mass" id="mass">
-                      <label class="radio__item-label" for="mass">Набор массы</label>
+                  <li class="additional-list__additional-item additional-item">
+                      <input class="visually-hidden" type="checkbox" id="checkbox-water" name="checkbox-water" value="checkbox-water">
+                      <label class="additional-item__label" for="checkbox-water">Питьевая вода</label>
                   </li>
-                  <li class="radio__item item-label">
-                      <input class="visually-hidden" type="radio" name="application" value="advice" id="advice">
-                      <label class="radio__item-label" for="advice">Не знаю (Нужен ваш совет)</label>
+                  <li class="additional-list__additional-item additional-item">
+                      <input class="visually-hidden" type="checkbox" id="checkbox-milk" name="checkbox-milk" value="checkbox-milk">
+                      <label class="additional-item__label" for="checkbox-milk">Молоко</label>
                   </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__column-contact column-contact">
-              <h3 class="column-contact__contact-title">Контактные данные (владельца кота)</h3>
-              <p class="column-contact__item-email item-email">
-                <label class="item-email__label-email label-email" for="contact-email">E-mail:*</label>
-                <input class="item-email__input-email input-email" type="text" placeholder="kuklachev@gmail.com" id="contact-email">
-                <span class=" item-email__email-icon email-icon" href=""></span>
-              </p>
-              <p class="column-contact__item-phone item-phone">
-                <label class="item-phone__label-phone label-phone" for="contact-phone">Телефон:*</label>
-                <input class="item-phone__input-phone input-phone" type="text" placeholder="8 (960) 900-60-90" id="contact-phone">
-                <span class="item-phone__phone-icon phone-icon" href=""></span>
-              </p>
-            </fieldset>
-            <fieldset class="form__column-comment column-comment">
-              <label class="column-comment__label-comment" for="comment-textarea">Комментарий</label>
-              <textarea class="column-comment__textarea-comment" name="comment-textarea" id="comment-textarea" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </fieldset>
-            <fieldset class="form__column-additional column-additional">
-              <h3>Дополнительно</h3>
-              <ul class="column-additional__additional-list additional-list">
-                <li class="additional-list__additional-item additional-item">
-                    <input class="visually-hidden" type="checkbox" id="checkbox-sweetener" name="checkbox" value="checkbox-sweetener" checked>
-                    <label class="additional-item__label" for="checkbox-sweetener">Сахарозаменитель</label>
-                </li>
-                <li class="additional-list__additional-item additional-item">
-                    <input class="visually-hidden" type="checkbox" id="checkbox-water" name="checkbox-water" value="checkbox-water">
-                    <label class="additional-item__label" for="checkbox-water">Питьевая вода</label>
-                </li>
-                <li class="additional-list__additional-item additional-item">
-                    <input class="visually-hidden" type="checkbox" id="checkbox-milk" name="checkbox-milk" value="checkbox-milk">
-                    <label class="additional-item__label" for="checkbox-milk">Молоко</label>
-                </li>
-                <li class="additional-list__additional-item additional-item">
-                  <input class="visually-hidden" type="checkbox" id="checkbox-vitamin" name="checkbox-vitamin" value="checkbox-vitamin">
-                  <label class="additional-item__label" for="checkbox-vitamin">Витамины</label>
-                </li>
-              </ul>
-            </fieldset>
+                  <li class="additional-list__additional-item additional-item">
+                    <input class="visually-hidden" type="checkbox" id="checkbox-vitamin" name="checkbox-vitamin" value="checkbox-vitamin">
+                    <label class="additional-item__label" for="checkbox-vitamin">Витамины</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <button class="button form__send-application" type="submit">Отправить заявку</button>
+            <b class="form__obligatory">* — Обязательные поля</b>
+          </form>
           </div>
-          <button class="button form__send-application" type="submit">Отправить заявку</button>
-          <b class="form__obligatory">* — Обязательные поля</b>
-        </form>
-      </section>
+        </section>
 
-      <!-- Секция партнеры -->
-      <section class="partners">
-        <h2 class="partners__title">Приглашаем  к сотрудничеству  дилеров!</h2>
-        <p class="partners__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
-      </section>
+        <!-- Секция партнеры -->
+        <section class="partners">
+          <h2 class="partners__title">Приглашаем  к сотрудничеству  дилеров!</h2>
+          <p class="partners__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+        </section>
+      <!-- </div> -->
     </main>
     <footer class="page-footer">
       <div class="container">

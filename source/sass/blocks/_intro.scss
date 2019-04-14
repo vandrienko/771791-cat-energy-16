@@ -1,6 +1,8 @@
 .intro {
   margin: 0;
   // padding: 0 20px 20px;
+  // min-width: 320px;
+  // min-height: 300px;
 
   font-weight: 400;
   font-size: 14px;
@@ -10,12 +12,13 @@
   text-transform: uppercase;
 
   background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-position: top center;
   background-repeat: no-repeat;
   background-color: #63a73a;
 }
 
 .intro__wrapper {
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   // background-color: #c9c3c3;
 }
 
@@ -32,11 +35,13 @@
 }
 
 .intro__slogan {
+  display: block;
   font-weight: 400;
-  // text-align: center;
+  text-align: center;
 }
 
 .intro__link {
+  vertical-align: bottom;
   font-size: 14px;
   line-height: 18px;
 }

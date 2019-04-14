@@ -1,0 +1,26 @@
+.column-comment__label-comment {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+}
+
+.column-comment__textarea-comment {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  // text-transform: uppercase;
+}
+
+.column-comment__textarea-comment::placeholder {
+  padding: 10px;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  text-transform: uppercase;
+}
