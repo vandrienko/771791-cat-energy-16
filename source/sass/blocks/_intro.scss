@@ -91,13 +91,15 @@
   .intro {
     padding-top: 120px;
     background-image: url("../../img/index-background-mobile@1x.jpg");
-    background-position: top -50px right 74px;
+    background-position: top -50px right 0;
+    background-size: 720px;
     background-repeat: no-repeat;
     // z-index: 100;
   }
 
   .intro__wrapper {
     justify-content: center;
+    min-height: 540px;
   }
 
   .intro_img {
