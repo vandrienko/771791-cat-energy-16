@@ -1,34 +1,17 @@
 .intro {
   margin: 0;
-  // padding: 0 20px 20px;
-  // min-width: 320px;
-  // min-height: 300px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   font-family: "Oswald", "Arial Narrow", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-
 }
 
 .intro__wrapper {
-  // width: 975px;
-  // padding-bottom: 20px;
-  // background-color: #c9c3c3;
-}
-
-.intro_background {
-  min-height: 300px;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-position: top center;
-  // background-position: -60px -80px;
-  // z-index: 2;
   background-repeat: no-repeat;
-  background-color: #63a73a;
-  // margin-top: -465px;
-  padding-bottom: 200px;
 }
 
 .intro__title {
@@ -49,8 +32,13 @@
   text-align: center;
 }
 
+.intro_img {
+  display: block;
+  margin: 0 auto;
+}
+
 .intro__link {
-  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-family: "Myriad Pro", "Arial Narrow", sans-serif;
   vertical-align: bottom;
   font-size: 14px;
   line-height: 18px;
@@ -58,29 +46,17 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    display: flex;
-    flex-direction: column;
-
+    // display: flex;
+    // flex-direction: column;
     // background-position: -60px right;
-  }
-
-  .intro_background {
-    display: none;
   }
 
   .intro__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-self: stretch;
-    align-items: stretch;
-    background-image: url("../../img/index-can-mobile@1x.png");
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-color: #63a73a;
     padding-left: 90px;
-    height: 850px;
-    // width: 708px;
+    background-image: none;
+    align-items: flex-start;
     color: #111111;
   }
 
@@ -92,15 +68,39 @@
   }
 
   .intro__slogan {
+    margin-bottom: 50px;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
   }
 
+  .intro_img {
+    order: 1;
+    align-self: center;
+  }
+
   .intro__link {
-    width: 245px;
-    font-family: "Oswald", "Arial Narrow", sans-serif;
+    width: 251px;
+    // font-family: "Oswald", "Arial Narrow", sans-serif;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 120px;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-position: top -50px right 74px;
+    background-repeat: no-repeat;
+    // z-index: 100;
+  }
+
+  .intro__wrapper {
+    justify-content: center;
+  }
+
+  .intro_img {
+    margin-top: -260px;
   }
 }

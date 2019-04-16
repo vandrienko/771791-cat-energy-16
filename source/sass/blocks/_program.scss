@@ -45,3 +45,56 @@
   color: #111111;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .program__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-left: 55px;
+    padding-right: 310px;
+    border: none;
+  }
+
+  .program__title {
+    max-width: 370px;
+    font-size: 36px;
+  }
+
+  .program__text {
+    max-width: 340px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // margin: 0 30px;
+  }
+
+  .program__item {
+    padding-left: 25px;
+    padding-right: 25px;
+    min-width: 520px;
+  }
+
+  .program__title {
+    align-self: center;
+  }
+}
