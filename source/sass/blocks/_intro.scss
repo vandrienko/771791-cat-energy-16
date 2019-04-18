@@ -1,31 +1,23 @@
 .intro {
   margin: 0;
-  // padding: 0 20px 20px;
-  // min-width: 320px;
-  // min-height: 300px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   font-family: "Oswald", "Arial Narrow", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-color: #63a73a;
 }
 
 .intro__wrapper {
-  // padding-bottom: 20px;
-  // background-color: #c9c3c3;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .intro__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 20px 0;
-
+  width: 260px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -40,8 +32,72 @@
   text-align: center;
 }
 
+.intro_img {
+  display: block;
+  margin: 0 auto;
+}
+
 .intro__link {
+  font-family: "Myriad Pro", "Arial Narrow", sans-serif;
   vertical-align: bottom;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+    background-image: none;
+    align-items: flex-start;
+    color: #111111;
+  }
+
+  .intro__title {
+    margin: 0;
+    width: 425px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .intro__slogan {
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .intro_img {
+    order: 1;
+    align-self: center;
+  }
+
+  .intro__link {
+    width: 251px;
+    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 120px;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-position: top -50px right 0;
+    background-size: 720px;
+    background-repeat: no-repeat;
+    // z-index: 100;
+  }
+
+  .intro__wrapper {
+    justify-content: center;
+    min-height: 540px;
+  }
+
+  .intro_img {
+    margin-top: -260px;
+  }
 }
