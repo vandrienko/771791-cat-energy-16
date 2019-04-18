@@ -16,8 +16,9 @@
 
 .intro__title {
   margin: 0;
+  margin: 0 auto;
   padding: 20px 0;
-
+  width: 260px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -45,12 +46,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro {
-    // display: flex;
-    // flex-direction: column;
-    // background-position: -60px right;
-  }
-
   .intro__wrapper {
     display: flex;
     flex-direction: column;
@@ -61,6 +56,7 @@
   }
 
   .intro__title {
+    margin: 0;
     width: 425px;
     font-size: 60px;
     line-height: 60px;
