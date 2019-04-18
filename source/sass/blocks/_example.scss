@@ -20,9 +20,15 @@
   line-height: 18px;
 }
 
+.example__achievement {
+  display: flex;
+  // width: 280px;
+}
+
 .example__expense {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: #111111;
 }
