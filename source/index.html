@@ -96,38 +96,44 @@
 
       <!-- Секция живой пример -->
       <section class="example">
-        <div class="example__wrapper">
+        <div class="container">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок!
             При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <div class="example__achievement">
-            <dl class="achievement">
-              <dt class="achievement__title">Снижение веса</dt>
-              <dd class="achievement__value">5 кг</dd>
-            </dl>
-            <dl class="achievement">
-              <dt class="achievement__title">Затрачено времени</dt>
-              <dd class="achievement__value">60 дней</dd>
-            </dl>
-          </div>
-          <p class="example__expense">Затраты на питание: 15 000 руб.</p>
-          <div class="example__comparisons comparisons">
-            <div class="comparisons-image">
-              <img class="comparisons__cat-to" src="http://placehold.it/150x100" width="" height="" alt="Изображение кота до сравнения">
-              <!-- <img class="comparisons__cat-later" src="http://placehold.it/150x100" width="" height="" alt="Изображение кота после сравнения"> -->
-            </div>
-            <div class="comparisons__range">
-              <button class="comparisons__button-to">Было</button>
-              <div class="comparisons__progress">
-                <span class="comparisons__toggle">====</span>
+          <div class="example__wrapper">
+            <div class="example__achievement">
+              <div class="achievement">
+                <div class="achievement__wrapper">
+                  <dl class="achievement-item">
+                    <dt class="achievement__title">Снижение веса</dt>
+                    <dd class="achievement__value">5 кг</dd>
+                  </dl>
+                  <dl class="achievement-item">
+                    <dt class="achievement__title">Затрачено времени</dt>
+                    <dd class="achievement__value">60 дней</dd>
+                  </dl>
+                </div>
+                <p class="achievement__expense">Затраты на питание: 15 000 руб.</p>
               </div>
-              <button class="comparisons__button-later">Стало</button>
+            </div>
+            <div class="example__comparisons comparisons">
+              <div class="comparisons-image">
+                <img class="comparisons__cat-to" src="http://placehold.it/150x100" width="" height="" alt="Изображение кота до сравнения">
+                <!-- <img class="comparisons__cat-later" src="http://placehold.it/150x100" width="" height="" alt="Изображение кота после сравнения"> -->
+              </div>
+              <div class="comparisons__range">
+                <button class="comparisons__button comparisons__button-to">Было</button>
+                <div class="comparisons__progress">
+                  <span class="comparisons__toggle">====</span>
+                </div>
+                <button class="comparisons__button comparisons__button-later">Стало</button>
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       <!-- Секция партнеры -->
