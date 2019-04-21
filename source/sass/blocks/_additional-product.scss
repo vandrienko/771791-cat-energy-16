@@ -1,5 +1,5 @@
 .additional-product {
-  padding: 0 20px;
+  // padding: 0 20px;
 }
 
 .additional-product__header {
@@ -13,7 +13,9 @@
   color: #111111;
 }
 
-// .additional-product__list {}
+.additional-product__list {
+  margin-bottom: 39px;
+}
 
 .additional-product__item {
   padding-bottom: 20px;
@@ -30,10 +32,6 @@
   color: #222222;
 }
 
-// .product__details {}
-
-// .additional-product__price {}
-
 .price__data {
   font-family: "Arial Narrow", "Oswald", sans-serif;
   font-weight: 400;
@@ -41,4 +39,15 @@
   line-height: 14px;
 
   color: #444444;
+}
+
+.price__value {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-product__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

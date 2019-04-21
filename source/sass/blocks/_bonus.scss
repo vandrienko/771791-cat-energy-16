@@ -1,8 +1,5 @@
-.bonus {
-  padding: 0 20px;
-}
-
 .bonus__text {
+  // display: flex;
   margin: 0;
   min-width: 280px;
   min-height: 289px;
@@ -12,6 +9,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
 
   background-color: #63a73a;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
