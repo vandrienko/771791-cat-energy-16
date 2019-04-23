@@ -6,6 +6,8 @@
 }
 
 .column-comment__textarea-comment {
+  box-sizing: border-box;
+  width: 100%;
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -23,4 +25,20 @@
   color: #444444;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .column-comment {
+    // padding: 40px;
+  }
+
+  .column-comment__label-comment {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .column-comment__textarea-comment::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

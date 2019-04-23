@@ -1,6 +1,7 @@
 .item__input {
-  min-width: 200px;
-
+  min-width: 140px;
+  box-sizing: border-box;
+  width: 100%;
   padding: 10px;
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-weight: 400;
@@ -11,11 +12,35 @@
   text-transform: uppercase;
 }
 
+.item__input::placeholder {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  text-transform: uppercase;
+}
+
 .item__label {
+  margin-right: 15px;
+  white-space: nowrap;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .item__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .item__input::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

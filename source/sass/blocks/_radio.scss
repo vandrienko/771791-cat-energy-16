@@ -3,7 +3,10 @@
 }
 
 .radio__list {
+  margin: 0;
+  padding: 25px;
   list-style: none;
+  border: 1px solid #ededed;
 }
 
 .radio__item-label {
@@ -11,6 +14,19 @@
   font-size: 16px;
   line-height: 18px;
   color: #222222;
+  white-space: nowrap;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .radio {
+    // padding: 40px;
+    border-bottom: none;
+  }
+
+  .radio__item-label {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -7,3 +7,30 @@
   line-height: 16px;
   color: #444444;
 }
+
+.form__column {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    // display: flex;
+    padding: 0 40px;
+  }
+
+  .form__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__send-application {
+    width: 283px;
+  }
+
+  .form__obligatory {
+    width: 192px;
+    font-size: 16px;
+  }
+}

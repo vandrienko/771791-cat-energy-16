@@ -1,12 +1,11 @@
-.form__column {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
 .column__item {
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
 }
 
-.item__input {
-  width: 100%;
+@media (min-width: $tablet-width) {
+  .column {
+    // padding: 40px;
+  }
 }
