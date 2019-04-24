@@ -5,6 +5,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
   color: #444444;
 }
 
@@ -26,11 +27,20 @@
   }
 
   .form__send-application {
+    display: inline-block;
     width: 283px;
   }
 
   .form__obligatory {
+    display: inline-block;
+    margin-left: 40px;
     width: 192px;
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__send-application {
+    width: 568px;
   }
 }

@@ -6,7 +6,6 @@
   margin: 0;
   padding: 25px;
   list-style: none;
-  border: 1px solid #ededed;
 }
 
 .radio__item-label {
@@ -21,12 +20,19 @@
 
 @media (min-width: $tablet-width) {
   .radio {
-    // padding: 40px;
+    width: 100%;
     border-bottom: none;
+    border: 1px solid #ededed;
   }
 
   .radio__item-label {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio {
+    width: 48%;
   }
 }

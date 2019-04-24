@@ -24,9 +24,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  // .column-additional {
-  //   padding: 40px;
-  // }
+  .column-additional {
+    width: 100%;
+  }
+
+  .column-additional__additional-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additional-item {
+    min-width: 220px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+  }
 
   .column-additional__additional-title {
     font-size: 36px;

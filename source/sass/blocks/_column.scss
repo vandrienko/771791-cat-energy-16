@@ -2,10 +2,23 @@
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .column {
-    // padding: 40px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .column {
+    margin-right: auto;
+    width: 48%;
+  }
+
+  .input-age {
+    margin-bottom: 0;
   }
 }

@@ -13,12 +13,39 @@
 
 @media (min-width: $tablet-width) {
   .column-contact {
-    // padding: 40px;
+    width: 100%;
   }
 
   .column-contact__contact-title {
     max-width: 520px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .column-contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column-contact__contact-title {
+    margin-right: 300px;
+    // display: block;
+    // flex-shrink: 0;
+    // width: 1400px;
+    // margin-right: auto;
+    // width: 1220px;
+    // display: flex;
+    // width: 1100px;
+    // flex-shrink: 0;
+  }
+
+  .column-contact__item {
+    width: 48%;
+  }
+
+  .item-email {
+    margin-right: auto;
   }
 }
