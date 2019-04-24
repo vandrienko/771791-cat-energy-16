@@ -8,10 +8,47 @@
 }
 
 .page-main__slogan {
+  margin: 0;
   padding: 0 20px;
 
   font-size: 14px;
   line-height: 18px;
   color: #111111;
   text-transform: uppercase;
+}
+
+.page-main__header-form {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header-form {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__slogan {
+    padding-left: 70px;
+    max-width: 420px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header-form {
+    margin-left: 50px;
+    padding-left: 30px;
+  }
+
+  .page-main__slogan {
+    margin-left: 50px;
+    padding-left: 30px;
+  }
 }

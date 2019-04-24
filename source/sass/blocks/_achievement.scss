@@ -1,22 +1,76 @@
-.achievement {
-  // padding: 0;
+.achievement__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.achievement-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .achievement__title {
+  order: 1;
   margin: 0;
-
   font-family: "Arial Narrow", "Oswald", sans-serif;
   font-weight: 400;
   color: #444444;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+  text-align: center;
 }
 
 .achievement__value {
+  margin: 0;
   font-weight: 400;
   color: #111111;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.achievement__expense {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .achievement__title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .achievement__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .achievement__expense {
+    margin-left: auto;
+    text-align: right;
+    max-width: 195px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievement {
+    flex-direction: column;
+  }
+
+  .achievement__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .achievement__expense {
+    margin-left: 0;
+    max-width: 570px;
+    text-align: left;
+  }
 }

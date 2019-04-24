@@ -1,22 +1,30 @@
 .more-product {
-  &__title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #111111;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  &__text {
-    font-family: "Arial Narrow", "Oswald", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    color: #444444;
-  }
+.more-product__title {
+  // text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+}
 
-  &__more {
-    background-color: #f2f2f2;
-    color: #444444;
-  }
+.more-product__text {
+  text-align: center;
+  font-family: "Arial Narrow", "Oswald", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.more-product__more {
+  background-color: #f2f2f2;
+  color: #444444;
 }
 
 @media (min-width: $tablet-width) {

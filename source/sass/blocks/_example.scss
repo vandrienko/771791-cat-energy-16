@@ -1,15 +1,13 @@
 .example {
-  padding: 0 20px;
   background-color: #f2f2f2;
 }
 
 .example__title {
   margin: 0;
-
-  font-weight: 400;
-  color: #111111;
-  font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
+  font-size: 36px;
+  color: #111111;
 }
 
 .example__text {
@@ -20,9 +18,44 @@
   line-height: 18px;
 }
 
-.example__expense {
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
+  .achievement {
+    display: flex;
+  }
+
+  .example__title {
+    font-size: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-color: #eaeaea;
+  }
+
+  .example__title {
+    background-color: #ffffff;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__text {
+    max-width: 570px;
+  }
 }

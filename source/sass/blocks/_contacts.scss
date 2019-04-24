@@ -1,0 +1,19 @@
+.contacts {
+  position: relative;
+}
+
+.contacts-img {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-img {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-img {
+    width: 1200px;
+  }
+}
