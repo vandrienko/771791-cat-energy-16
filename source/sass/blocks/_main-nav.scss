@@ -1,6 +1,5 @@
 .main-nav {
   // display: flex;
-
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -10,14 +9,29 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 18px;
-  right: 20px;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
-  background-color: #ffffff;
-  border: none;
-  cursor: pointer;
-  opacity: 0.3;
+  padding: 20px;
+  background-color: transparent;
+  border: 0;
+  user-select: none;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.main-nav__toggle-bar {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 24px;
+  height: 2px;
+  background-color: #222;
 }
 
 .main-nav__toggle::before {
@@ -40,6 +54,43 @@
   height: 2px;
   background-color: #111111;
   transform: rotate(-45deg);
+}
+
+.main-nav__toggle-bar::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #222;
+}
+
+.main-nav__toggle-bar::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #222;
+}
+  .main-nav--closed {
+  display: none;
+}
+.toggle-bar--closed {
+  display: none;
+}
+.toggle-bar--open {
+  display: block;
+}
+.site-list--closed {
+  display: none;
+}
+.site-list--open {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
