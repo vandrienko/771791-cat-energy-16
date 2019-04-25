@@ -9,6 +9,8 @@
 }
 
 .intro__wrapper {
+  margin-left: -20px;
+  margin-right: -20px;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -16,7 +18,11 @@
 
 .intro__title {
   margin: 0 auto;
-  padding: 20px 0;
+  // margin-top: 10px;
+  margin-bottom: 9px;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 14px;
   width: 260px;
   font-weight: 400;
   font-size: 36px;
@@ -28,6 +34,7 @@
 
 .intro__slogan {
   display: block;
+  margin-bottom: 29px;
   font-weight: 400;
   text-align: center;
 }
@@ -35,12 +42,15 @@
 .intro_img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 2px;
 }
 
 .intro__link {
+  margin: 0 auto;
   font-family: "Myriad Pro", "Arial Narrow", sans-serif;
   vertical-align: bottom;
   font-size: 14px;
+  max-width: 280px;
   line-height: 18px;
 }
 
@@ -48,7 +58,7 @@
   .intro__wrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 90px;
+    padding-left: 108px;
     background-image: none;
     align-items: flex-start;
     color: #111111;
@@ -56,6 +66,7 @@
 
   .intro__title {
     margin: 0;
+    margin-bottom: 26px;
     width: 425px;
     font-size: 60px;
     line-height: 60px;
@@ -63,19 +74,27 @@
   }
 
   .intro__slogan {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .intro_img {
-    order: 1;
+  .intro__image-wrapper {
+    display: flex;
+    justify-content: center;
+    // width: 100%;
+    order: 2;
     align-self: center;
+    margin-top: -80px;
+    margin-left: -114px;
   }
 
   .intro__link {
-    width: 251px;
+    z-index: 1;
+    margin: 0;
+    padding: 16px 15px;
+    width: 246px;
     font-family: "Oswald", "Arial Narrow", sans-serif;
     font-size: 20px;
     line-height: 20px;

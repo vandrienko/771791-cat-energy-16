@@ -15,13 +15,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 70px;
+    margin-bottom: 5px;
+    min-height: 109px;
+  }
+
+  .logo-link__logo-image {
+    width: 173px;
+    height: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   .page-header--index {
