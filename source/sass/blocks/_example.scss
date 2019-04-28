@@ -1,9 +1,12 @@
 .example {
   background-color: #f2f2f2;
+  padding-bottom: 36px;
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 19px;
+  padding-top: 21px;
   line-height: 60px;
   font-weight: 400;
   font-size: 36px;
@@ -11,6 +14,9 @@
 }
 
 .example__text {
+  margin: 0;
+  margin-bottom: 15px;
+  max-width: 225px;
   font-family: "Arial Narrow", "Oswald", sans-serif;
   font-weight: 400;
   color: #444444;
@@ -23,15 +29,15 @@
     background-color: #ffffff;
   }
 
-  .achievement {
-    display: flex;
-  }
-
   .example__title {
+    margin-bottom: 57px;
     font-size: 60px;
   }
 
   .example__text {
+    margin-bottom: 44px;
+    padding-right: 60px;
+    max-width: 708px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -39,11 +45,20 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-color: #eaeaea;
+    // padding-top: 100px;
+    background-color: #21eb1a;
+  }
+
+  .example__container--color {
+    padding-top: 100px;
+    margin-top: -100px;
+    background-color: #f70b0b;
   }
 
   .example__title {
-    background-color: #ffffff;
+    margin-top: -20px;
+    // padding-top: 100px;
+    background-color: #c4c124;
     margin-left: -40px;
     margin-right: -40px;
     padding-left: 40px;
