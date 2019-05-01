@@ -3,8 +3,14 @@
 
   &__title {
     margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 19px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-bottom: 1px solid #d9d9d9;
     font-weight: 400;
     font-size: 36px;
@@ -23,7 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 24px;
+  padding-top: 20px;
   padding-bottom: 24px;
   min-width: 280px;
   border-bottom: 1px solid #d9d9d9;
@@ -31,6 +37,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__title {
+    padding-top: 31px;
     font-size: 60px;
     border: none;
   }
