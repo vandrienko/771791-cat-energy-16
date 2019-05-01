@@ -1,13 +1,32 @@
 .more-product {
+  position: relative;
   display: flex;
   flex-direction: column;
+  // padding-top: 80px;
   align-items: center;
+}
+
+.more-product::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+  background-color: #ffffff;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .more-product__title {
   // text-align: center;
   display: block;
   margin: 0 auto;
+  margin-bottom: 7px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -15,6 +34,8 @@
 }
 
 .more-product__text {
+  margin: 0;
+  margin-bottom: 21px;
   text-align: center;
   font-family: "Arial Narrow", "Oswald", sans-serif;
   font-size: 12px;
@@ -39,14 +60,26 @@
     background-color: #ffffff;
   }
 
+  .more-product::after {
+    top: 54px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .more-product__info {
+    margin-top: 165px;
+  }
+
   .more-product__title {
     // margin: 30px auto;
+    margin-bottom: 25px;
     width: 140px;
     font-size: 20px;
     text-align: center;
   }
 
   .more-product__text {
+    margin-bottom: 90px;
     width: 140px;
     font-size: 16px;
     text-align: center;
