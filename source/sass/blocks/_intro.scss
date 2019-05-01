@@ -9,6 +9,8 @@
 }
 
 .intro__wrapper {
+  margin-left: -20px;
+  margin-right: -20px;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -16,8 +18,12 @@
 
 .intro__title {
   margin: 0 auto;
-  padding: 20px 0;
-  width: 260px;
+  // margin-top: 10px;
+  margin-bottom: 9px;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 14px;
+  width: 268px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -28,19 +34,33 @@
 
 .intro__slogan {
   display: block;
+  margin-bottom: 28px;
   font-weight: 400;
   text-align: center;
+}
+
+.intro__image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3px;
 }
 
 .intro_img {
   display: block;
   margin: 0 auto;
+  // margin-bottom: 2px;
+  width: 280px;
+  height: 270px;
 }
 
 .intro__link {
+  margin: 0 auto;
+  padding: 11px 20px;
   font-family: "Myriad Pro", "Arial Narrow", sans-serif;
   vertical-align: bottom;
   font-size: 14px;
+  max-width: 280px;
   line-height: 18px;
 }
 
@@ -48,7 +68,7 @@
   .intro__wrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 90px;
+    padding-left: 108px;
     background-image: none;
     align-items: flex-start;
     color: #111111;
@@ -56,26 +76,36 @@
 
   .intro__title {
     margin: 0;
-    width: 425px;
+    margin-bottom: 26px;
+    width: 446px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
   }
 
   .intro__slogan {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .intro_img {
-    order: 1;
+  .intro__image-wrapper {
+    display: flex;
+    justify-content: center;
+    // width: 100%;
+    order: 2;
     align-self: center;
+    margin-top: -80px;
+    margin-left: -114px;
+    margin-bottom: 0;
   }
 
   .intro__link {
-    width: 251px;
+    z-index: 1;
+    margin: 0;
+    padding: 16px 15px;
+    width: 246px;
     font-family: "Oswald", "Arial Narrow", sans-serif;
     font-size: 20px;
     line-height: 20px;
@@ -84,20 +114,49 @@
 
 @media (min-width: $desktop-width) {
   .intro {
+    margin-right: -45px;
+    margin-bottom: 54px;
     padding-top: 120px;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
-    background-position: top -50px right 0;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: top 0 right -24px;
     background-size: 720px;
     background-repeat: no-repeat;
     // z-index: 100;
   }
 
   .intro__wrapper {
-    justify-content: center;
-    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 602px;
+    // display: inline-block;
+    // justify-content: center;
+    min-height: 576px;
+    padding-left: 77px;
   }
 
-  .intro_img {
-    margin-top: -260px;
+  .intro__title {
+    padding-top: 106px;
+  }
+
+  .intro__slogan {
+    margin-bottom: 50px;
+  }
+
+  .intro__image-wrapper {
+    margin-top: 22px;
+    margin-left: -76px;
+  }
+
+  .intro__img {
+    // display: inline-block;
+    // position: absolute;
+    // top: 142px;
+    // left: 515px;
+    width: 552px;
+    height: 499px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -1,13 +1,15 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   // position: absolute;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
-    height: 70px;
+    min-height: 70px;
+    // background-color: red;
   }
 
   .page-header__wrapper {
@@ -15,21 +17,37 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5px;
+    min-width: 708px;
+    min-height: 109px;
+  }
 
-    height: 70px;
+  .logo-link__logo-image {
+    width: 173px;
+    height: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 50px;
+    padding-top: 30px;
+  }
+
+  .page-header__wrapper {
+    min-width: 1220px;
+    // max-width: 1300px;
   }
 
   .page-header--index {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
+  }
+
+  .logo-link__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }

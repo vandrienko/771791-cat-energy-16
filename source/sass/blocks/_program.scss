@@ -20,8 +20,12 @@
 }
 
 .program__title {
-  margin-top: 19px;
+  margin: 0;
+  margin-bottom: 8px;
+  // margin-top: 19px;
   padding-top: 10px;
+  padding-left: 70px;
+  // padding: ri
   padding-bottom: 10px;
 
   font-size: 24px;
@@ -29,10 +33,17 @@
   font-weight: normal;
 
   color: #111111;
-  text-align: center;
+  // text-align: center;
 }
 
 .program__text {
+  margin: 0;
+  margin-bottom: 19px;
+  padding-top: 10px;
+  padding-bottom: 22px;
+  // padding-right: 20px;
+  // padding-left: 20px;
+  max-width: 200px;
   border-bottom: 1px solid  #d9d9d9;
   font-family: "Arial Narrow", "Oswald", sans-serif;
   color: #444444;
@@ -40,6 +51,7 @@
 }
 
 .program__link {
+  padding-right: 30px;
   font-size: 16px;
   line-height: 16px;
   color: #111111;
@@ -47,40 +59,59 @@
 }
 
 @media (min-width: $tablet-width) {
+  .program {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
   .program__wrapper {
     display: flex;
     flex-direction: column;
+    // margin-bottom: 0;
   }
 
   .program__item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     padding-left: 55px;
     padding-right: 310px;
     border: none;
   }
 
   .program__title {
+    margin-top: 48px;
+    margin-bottom: 3px;
+    padding-left: 0;
     max-width: 370px;
     font-size: 36px;
   }
 
   .program__text {
-    max-width: 340px;
+    margin-bottom: 35px;
+    max-width: 310px;
     border: none;
     font-size: 16px;
     line-height: 24px;
   }
 
+  .text--size {
+    max-width: 280px;
+  }
+
   .program__link {
+    margin-bottom: 40px;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .program {
+    margin-bottom: 48px;
+  }
+
   .program__wrapper {
     display: flex;
     flex-direction: row;
@@ -95,6 +126,21 @@
   }
 
   .program__title {
-    align-self: center;
+    // align-self: flex-start;
+    padding-left: 190px;
+    margin-bottom: 50px;
+  }
+
+  .program__text {
+    // align-self: flex-start;
+    // align-self: center;
+    margin-bottom: 12px;
+    padding-left: 29px;
+    max-width: 380px;
+  }
+
+  .program__link {
+    // align-self: flex-start;
+    margin-left: 29px;
   }
 }

@@ -1,19 +1,29 @@
 .achievement__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .achievement-item {
+  margin: 0;
+  // padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  // justify-content: space-between;
 }
 
 .achievement__title {
-  order: 1;
+  position: relative;
+  bottom: 9px;
   margin: 0;
+  padding: 0 16px;
+  max-width: 55px;
+  order: 1;
   font-family: "Arial Narrow", "Oswald", sans-serif;
   font-weight: 400;
+  background-color: #f2f2f2;
   color: #444444;
   font-size: 12px;
   line-height: 12px;
@@ -23,6 +33,10 @@
 
 .achievement__value {
   margin: 0;
+  padding: 15px 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 83px;
   font-weight: 400;
   color: #111111;
   font-size: 24px;
@@ -32,6 +46,8 @@
 }
 
 .achievement__expense {
+  margin: 0;
+  margin-bottom: 34px;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -40,21 +56,46 @@
 }
 
 @media (min-width: $tablet-width) {
+  .achievement {
+    display: flex;
+  }
+
+  .achievement__wrapper {
+    width: 365px;
+  }
+
+  .achievement-item {
+    // align-items: flex-start;
+    // justify-content: space-between;
+    // width: 200px;
+  }
+
   .achievement__title {
+    bottom: 6px;
+    padding: 0 20px;
+    max-width: 300px;
+    background-color: #ffffff;
     font-size: 14px;
     line-height: 14px;
   }
 
   .achievement__value {
+    width: 120px;
     font-size: 30px;
     line-height: 37px;
   }
 
   .achievement__expense {
+    padding-top: 22px;
     margin-left: auto;
     text-align: right;
     max-width: 195px;
     font-size: 20px;
+  }
+
+  .achievement__expense-amount {
+    display: inline-block;
+    margin-top: 10px;
   }
 }
 
@@ -70,7 +111,12 @@
 
   .achievement__expense {
     margin-left: 0;
+    padding-top: 22px;
     max-width: 570px;
     text-align: left;
+  }
+
+  .achievement__title {
+    background-color: #cdcdcd;
   }
 }
