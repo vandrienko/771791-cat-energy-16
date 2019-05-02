@@ -1,7 +1,7 @@
 .example {
   background-color: #f2f2f2;
   // margin-bottom: 27px;
-  padding-bottom: 36px;
+  padding-bottom: 34px;
 }
 
 .example__title {
@@ -87,5 +87,9 @@
   .example__text {
     max-width: 360px;
     margin-bottom: 60px;
+  }
+
+  .example__achievement {
+    margin-bottom: 39px;
   }
 }

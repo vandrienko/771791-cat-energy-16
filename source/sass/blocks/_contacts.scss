@@ -8,6 +8,10 @@
   width: 320px;
 }
 
+.contacts__map {
+  font-size: 0;
+}
+
 .contacts__map iframe {
   width: 100%;
 }
@@ -16,10 +20,18 @@
   .contacts-img {
     width: 768px;
   }
+
+  .contacts__map iframe {
+    height: 430px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts-img {
     width: 1200px;
+  }
+
+  .contacts__map iframe {
+    height: 400px;
   }
 }

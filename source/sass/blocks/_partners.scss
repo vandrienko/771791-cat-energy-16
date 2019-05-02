@@ -1,4 +1,6 @@
 .partners {
+  padding-top: 30px;
+  padding-bottom: 24px;
   // padding: 28px 20px;
   display: flex;
   // width: 100%;
@@ -26,10 +28,9 @@
 
 @media (min-width: $tablet-width) {
   .partners {
-    flex-direction: row;
-    justify-content: space-between;
-    // padding: 25 30px;
-    width: 100%;
+    padding-top: 63px;
+    padding-bottom: 24px;
+    min-width: 625px;
   }
 
   .partners__title {
@@ -45,19 +46,28 @@
   }
 
   .partners__street {
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .partners {
     position: absolute;
-    top: 100px;
-    left: 110px;
+    top: 95px;
+    left: 65px;
     align-items: center;
-    width: 570px;
+    // text-align: left;
+    padding-top: 2px;
+    padding-right: 90px;
+    padding-left: 75px;
+    padding-bottom: 0;
+    min-width: 405px;
     min-height: 200px;
     background-color: #ffffff;
+  }
+
+  .partners__address {
+    text-align: left;
   }
 
   .partners__street {
