@@ -1,5 +1,6 @@
 .example {
   background-color: #f2f2f2;
+  // margin-bottom: 27px;
   padding-bottom: 36px;
 }
 
@@ -26,6 +27,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    padding-bottom: 0;
     background-color: #ffffff;
   }
 
@@ -41,26 +43,36 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .example__achievement {
+    background-color: #f2f2f2;
+    margin-bottom: 231px;
+    // margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example {
+    // background-color: #f2f2f2;
+    padding-bottom: 0;
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 1023px, #eaeaea 384px, #eaeaea);
     // padding-top: 100px;
-    background-color: #21eb1a;
+    // background-color: #21eb1a;
   }
 
   .example__container--color {
     padding-top: 100px;
     margin-top: -100px;
-    background-color: #f70b0b;
+    // background-color: #f70b0b;
   }
 
   .example__title {
-    margin-top: -20px;
+    margin-top: -150px;
     // padding-top: 100px;
-    background-color: #c4c124;
+    // background-color: #c4c124;
     margin-left: -40px;
     margin-right: -40px;
+    margin-bottom: 139px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -68,9 +80,12 @@
   .example__wrapper {
     display: flex;
     justify-content: space-between;
+    // background-color: #f2f2f2;
+    // background-image: linear-gradient(to right,#f2f2f2,#f2f2f2 384px,#eaeaea 384px,#eaeaea);
   }
 
   .example__text {
-    max-width: 570px;
+    max-width: 360px;
+    margin-bottom: 60px;
   }
 }
