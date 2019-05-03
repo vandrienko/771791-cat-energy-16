@@ -20,7 +20,7 @@
 
 .product__value {
   text-align: left;
-  font-family: "Arial Narrow", "Oswald", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
@@ -28,7 +28,7 @@
 
 .product__data {
   text-align: right;
-  font-family: "Arial Narrow", "Oswald", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
@@ -36,6 +36,7 @@
 
 .product__link {
   display: block;
+  line-height: 0;
   // max-width: 140px;
   // max-height: 144px;
 }
@@ -50,6 +51,10 @@
   padding-top: 20px;
   // padding-bottom: 21px;
   width: 140px;
+}
+
+.product__order {
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {

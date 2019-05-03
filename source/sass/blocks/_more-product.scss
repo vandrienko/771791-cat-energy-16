@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  // padding-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 24px;
   align-items: center;
 }
 
@@ -37,7 +38,7 @@
   margin: 0;
   margin-bottom: 21px;
   text-align: center;
-  font-family: "Arial Narrow", "Oswald", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #444444;

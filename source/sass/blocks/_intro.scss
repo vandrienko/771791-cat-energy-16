@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -19,9 +19,9 @@
 .intro__title {
   margin: 0 auto;
   // margin-top: 10px;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   padding: 0;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 14px;
   width: 268px;
   font-weight: 400;
@@ -34,7 +34,7 @@
 
 .intro__slogan {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   font-weight: 400;
   text-align: center;
 }
@@ -57,7 +57,7 @@
 .intro__link {
   margin: 0 auto;
   padding: 11px 20px;
-  font-family: "Myriad Pro", "Arial Narrow", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   vertical-align: bottom;
   font-size: 14px;
   max-width: 280px;
@@ -68,7 +68,7 @@
   .intro__wrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 108px;
+    padding-left: 109px;
     background-image: none;
     align-items: flex-start;
     color: #111111;
@@ -84,7 +84,7 @@
   }
 
   .intro__slogan {
-    margin-bottom: 46px;
+    margin-bottom: 48px;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
@@ -97,7 +97,7 @@
     order: 2;
     align-self: center;
     margin-top: -80px;
-    margin-left: -114px;
+    margin-left: -111px;
     margin-bottom: 0;
   }
 
@@ -106,7 +106,7 @@
     margin: 0;
     padding: 16px 15px;
     width: 246px;
-    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
   }
@@ -115,12 +115,12 @@
 @media (min-width: $desktop-width) {
   .intro {
     margin-right: -45px;
-    margin-bottom: 54px;
-    padding-top: 120px;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-position: top 0 right -24px;
-    background-size: 720px;
-    background-repeat: no-repeat;
+    margin-bottom: 57px;
+    // padding-top: 120px;
+    // background-image: url("../../img/index-background-desktop@1x.jpg");
+    // background-position: top 0 right -24px;
+    // background-size: 720px;
+    // background-repeat: no-repeat;
     // z-index: 100;
   }
 
@@ -129,15 +129,18 @@
     flex-direction: column;
     align-content: flex-start;
     flex-wrap: wrap;
-    height: 602px;
+    min-height: 602px;
     // display: inline-block;
     // justify-content: center;
     min-height: 576px;
     padding-left: 77px;
+    position: relative;
   }
 
   .intro__title {
-    padding-top: 106px;
+    // width: 446px;
+    padding-top: 82px;
+    padding-right: 10px;
   }
 
   .intro__slogan {
@@ -145,6 +148,10 @@
   }
 
   .intro__image-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: -24px;
+    left: 523px;
     margin-top: 22px;
     margin-left: -76px;
   }

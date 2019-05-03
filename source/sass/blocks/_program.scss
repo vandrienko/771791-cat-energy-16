@@ -31,7 +31,6 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
-
   color: #111111;
   // text-align: center;
 }
@@ -43,9 +42,9 @@
   padding-bottom: 22px;
   // padding-right: 20px;
   // padding-left: 20px;
-  max-width: 200px;
+  max-width: 240px;
   border-bottom: 1px solid  #d9d9d9;
-  font-family: "Arial Narrow", "Oswald", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   color: #444444;
   text-transform: none;
 }
@@ -61,7 +60,7 @@
 @media (min-width: $tablet-width) {
   .program {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .program__wrapper {
@@ -74,15 +73,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 31px;
-    padding-left: 55px;
-    padding-right: 310px;
+    margin-bottom: 29px;
+    padding-top: 66px;
+    padding-left: 52px;
+    padding-right: 265px;
     border: none;
   }
 
   .program__title {
-    margin-top: 48px;
-    margin-bottom: 3px;
+    // margin-top: 50px;
+    margin-bottom: 5px;
     padding-left: 0;
     max-width: 370px;
     font-size: 36px;
@@ -90,18 +90,18 @@
 
   .program__text {
     margin-bottom: 35px;
-    max-width: 310px;
+    max-width: 380px;
     border: none;
     font-size: 16px;
     line-height: 24px;
   }
 
   .text--size {
-    max-width: 280px;
+    max-width: 343px;
   }
 
   .program__link {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     font-size: 20px;
     line-height: 20px;
   }
