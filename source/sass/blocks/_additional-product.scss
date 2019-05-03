@@ -16,7 +16,8 @@
   line-height: 24px;
   color: #111111;
 }
-.additional-product__header::after, .title-line::before {
+
+.additional-product__header::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -27,6 +28,7 @@
   background: #68b738;
   z-index: -1;
 }
+
 .additional-product__list {
   margin-bottom: 39px;
 }

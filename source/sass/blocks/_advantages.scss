@@ -47,7 +47,7 @@
   }
 
   .advantages__title {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
     font-size: 60px;
   }
 
@@ -79,8 +79,13 @@
   }
 
   .advantages__item {
-    padding-right: 28px;
+    padding-right: 0;
+    max-width: 245px;
     // margin-left: 40px;
     // margin-right: 40px;
+  }
+
+  .advantages__list {
+    padding-bottom: 4px;
   }
 }

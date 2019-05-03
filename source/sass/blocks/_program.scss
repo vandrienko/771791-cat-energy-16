@@ -21,18 +21,51 @@
 
 .program__title {
   margin: 0;
+  margin-left: 2px;
   margin-bottom: 8px;
   // margin-top: 19px;
-  padding-top: 10px;
-  padding-left: 70px;
+  padding-top: 3px;
+  // padding-left: 70px;
   // padding: ri
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
   color: #111111;
   // text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.program__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 19px;
+  background-color: #68b738;
+  border-radius: 50%;
+  // z-index: 7;
+}
+
+.program__icon--slim::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97%;
+  background: url("../../img/icon-cat-slim.svg") no-repeat center;
+}
+
+.program__icon--pro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 135%;
+  height: 95%;
+  background: url("../../img/icon-cat-pro.svg") no-repeat center;
 }
 
 .program__text {
@@ -60,7 +93,7 @@
 @media (min-width: $tablet-width) {
   .program {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   .program__wrapper {
@@ -70,6 +103,7 @@
   }
 
   .program__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -81,11 +115,32 @@
   }
 
   .program__title {
+    margin: 0;
     // margin-top: 50px;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
+    padding-top: 12px;
+    padding-bottom: 13px;
     padding-left: 0;
-    max-width: 370px;
+    // max-width: 370px;
+    max-width: 385px;
     font-size: 36px;
+  }
+
+  .program__icon {
+    position: absolute;
+    top: 92px;
+    right: 43px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .program__icon--slim::after {
+    top: -12px;
+  }
+
+  .program__icon--pro::after {
+    top: 4px;
+    left: -35px;
   }
 
   .program__text {
@@ -120,6 +175,7 @@
   }
 
   .program__item {
+    padding-top: 34px;
     padding-left: 25px;
     padding-right: 25px;
     min-width: 520px;
@@ -127,20 +183,38 @@
 
   .program__title {
     // align-self: flex-start;
-    padding-left: 190px;
-    margin-bottom: 50px;
+    padding-left: 28px;
+    margin-bottom: 17px;
+  }
+
+  .program__icon {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100px;
+    height: 100px;
+    margin-right: 60px;
+  }
+
+  .program__icon--slim::after {
+    top: -6px;
+  }
+
+  .program__icon--pro::after {
+    left: -19px;
   }
 
   .program__text {
     // align-self: flex-start;
     // align-self: center;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
     padding-left: 29px;
-    max-width: 380px;
+    max-width: 490px;
   }
 
   .program__link {
     // align-self: flex-start;
     margin-left: 29px;
+    margin-bottom: 40px;
   }
 }

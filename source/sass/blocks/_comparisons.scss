@@ -83,13 +83,13 @@
 
   .comparisons__range {
     max-width: 578px;
-    margin-bottom: 74px;
+    margin-bottom: 72px;
   }
 
   .comparisons__progress {
     width: 428px;
     height: 6px;
-    padding: 4px 0;
+    padding: 3px 0;
     background-color: #cdcdcd;
     border-color: #cdcdcd;
   }
@@ -107,7 +107,7 @@
 
 @media (min-width: $desktop-width) {
   .comparisons {
-    // background-image: none;
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 379px, #eaeaea 372px, #eaeaea);
   }
 
   .comparisons-image {

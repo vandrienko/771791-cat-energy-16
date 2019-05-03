@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .partners {
-    padding-top: 63px;
+    padding-top: 65px;
     padding-bottom: 24px;
     min-width: 625px;
   }
@@ -41,6 +41,7 @@
   .partners__address {
     display: flex;
     flex-direction: column;
+    width: 160px;
     font-size: 16px;
     text-align: right;
   }
