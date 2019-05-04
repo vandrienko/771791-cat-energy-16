@@ -12,6 +12,7 @@
 
 .product_row {
   // width: 140px;
+  // margin-top: 10px;
 }
 
 .product__details {
@@ -19,6 +20,8 @@
 }
 
 .product__value {
+  padding: 0;
+  padding-bottom: 2px;
   text-align: left;
   font-family: "Arial", "Oswald", sans-serif;
   font-size: 12px;
@@ -27,6 +30,8 @@
 }
 
 .product__data {
+  padding: 0;
+  padding-bottom: 2px;
   text-align: right;
   font-family: "Arial", "Oswald", sans-serif;
   font-size: 12px;
@@ -48,7 +53,7 @@
 }
 
 .product__info {
-  padding-top: 20px;
+  padding-top: 21px;
   // padding-bottom: 21px;
   width: 140px;
 }
