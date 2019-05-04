@@ -144,9 +144,11 @@
 
 @media (min-width: $desktop-width) {
   .product {
+    margin-top: 141px;
     margin-left: 40px;
     margin-right: 40px;
-    width: 169px;
+    // width: 169px;
+    width: 171px;
   }
 
   .product_row {

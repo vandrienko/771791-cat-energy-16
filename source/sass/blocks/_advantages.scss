@@ -119,8 +119,10 @@
     counter-increment: number;
     content: counter(number);
     position: absolute;
-    left: 116px;
-    top: 6px;
+    // left: 116px;
+    // top: 6px;
+    left: 108px;
+    top: 16px;
     font-size: 280px;
     line-height: 1;
     font-family: "Oswald", "Arial", sans-serif;
