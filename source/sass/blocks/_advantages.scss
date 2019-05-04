@@ -23,18 +23,59 @@
   margin: 0;
   padding: 0;
   padding-bottom: 8px;
+  counter-reset: number;
 
   color: #444444;
   list-style: none;
 }
 
 .advantages__item {
+  // display: flex;
+  position: relative;
   max-width: 220px;
   padding-left: 80px;
   padding-top: 18px;
   padding-bottom: 8px;
 
   font-family: "Arial", "Oswald", sans-serif;
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  // display: block;
+  // flex-shrink: 0;
+  top: 16px;
+  left: 0;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-size: 50px;
+}
+
+.advantages__item--useful-nutrients::before {
+  background-image: url("../../img/advantage-leaf@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--powder::before {
+  background-image: url("../../img/advantage-powder@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--reception-food::before {
+  background-image: url("../../img/advantage-dining@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--result::before {
+  background-image: url("../../img/advantage-clock@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .advantages__item--result {
@@ -68,6 +109,25 @@
     padding-bottom: 30px;
   }
 
+  .advantages__item::before {
+    top: 45px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .advantages__item::after {
+    counter-increment: number;
+    content: counter(number);
+    position: absolute;
+    left: 116px;
+    top: 6px;
+    font-size: 280px;
+    line-height: 1;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
   .advantages__item--result {
     // max-width: 300px;
   }
@@ -83,6 +143,10 @@
     max-width: 245px;
     // margin-left: 40px;
     // margin-right: 40px;
+  }
+
+  .advantages__item::before {
+    top: 43px;
   }
 
   .advantages__list {

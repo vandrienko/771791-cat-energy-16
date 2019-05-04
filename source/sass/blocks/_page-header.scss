@@ -32,11 +32,12 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 30px;
+    padding-top: 31px;
   }
 
   .page-header__wrapper {
     min-width: 1220px;
+    // margin-bottom: 0px;
     // max-width: 1300px;
   }
 
