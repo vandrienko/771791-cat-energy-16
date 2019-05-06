@@ -100,7 +100,8 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 439px;
+    // max-width: 455px;
+    max-width: 485px;
   }
 
   .main-nav__toggle {
@@ -110,7 +111,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    // width: 439px;
-    width: 491px;
+    // max-width: 505px;
+    max-width: 520px;
   }
 }

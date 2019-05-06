@@ -10,11 +10,24 @@
 }
 
 .copyright__link {
-  font-family: "Arial Narrow", "Oswald", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
+  font-family: "Arial", "Oswald", sans-serif;
 
   color: #444444;
   font-size: 16px;
   line-height: 16px;
+}
+
+.copyright__link:hover path {
+  fill: #68b738;
+}
+
+.copyright__link:active,
+.copyright__link:visited {
+  opacity: 0.3;
 }
 
 .copyright__icon {
@@ -39,6 +52,7 @@
   }
 
   .copyright__link {
+    min-width: 163px;
     // margin: auto 0;
   }
 }

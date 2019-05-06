@@ -1,25 +1,130 @@
+.column-contact {
+  // overflow: hidden;
+  // margin-left: -20px;
+  // margin-right: -20px;
+  // margin-bottom: 30px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+}
+
 .column-contact__contact-title {
-  max-width: 185px;
+  position: relative;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 33px;
+  // padding-right: 15px;
+  max-width: 201px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+  background-color: #ffffff;
+}
+
+.column-contact__contact-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 3px;
+  margin-top: -12px;
+  margin-left: 16px;
+  background: #68b738;
+  z-index: -1;
 }
 
 .column-contact__item {
   display: flex;
   align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+.label-email {
+  margin-right: 7px;
+}
+
+.item-email {
+  margin-bottom: 15px;
+}
+
+.item__icon-email {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 17px;
+}
+
+.label-phone {
+  margin-right: 7px;
+}
+
+.item__icon-phone {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+  width: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .column-contact {
+    margin-top: 79px;
+    margin-bottom: 67px;
     width: 100%;
   }
 
   .column-contact__contact-title {
-    max-width: 520px;
+    margin-left: -40px;
+    margin-bottom: 74px;
+    padding-left: 40px;
+    max-width: 553px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .column-contact__contact-title::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100vw;
+    height: 3px;
+    // margin-left: -40px;
+    // padding-left: 40px;
+    background: #68b738;
+    z-index: -1;
+  }
+
+  .column-contact__contact-title::after {
+    // content: "";
+    // position: absolute;
+    top: 20px;
+    // width: 100vw;
+    // height: 5px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .item-email {
+    margin-bottom: 20px;
+  }
+
+  .label-email {
+    margin-right: 17px;
+  }
+
+  .item__icon-email {
+    top: 20px;
+    right: 19px;
+  }
+
+  .label-phone {
+    margin-right: 11px;
+  }
+
+  .item__icon-phone {
+    top: 17px;
+    right: 16px;
   }
 }
 
@@ -27,6 +132,8 @@
   .column-contact {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 69px;
   }
 
   .column-contact__contact-title {
@@ -42,10 +149,11 @@
   }
 
   .column-contact__item {
-    width: 48%;
+    width: 571px;
   }
 
   .item-email {
     margin-right: auto;
+    margin-bottom: 0;
   }
 }

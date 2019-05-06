@@ -1,24 +1,54 @@
+.column-comment {
+  // overflow: hidden;
+  line-height: 0;
+  // margin-left: -20px;
+  // margin-right: -20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+}
+
 .column-comment__label-comment {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 33px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+  // background-color: #ffffff;
+}
+
+.column-comment__label-comment::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  width: 100vw;
+  height: 3px;
+  margin-top: -12px;
+  margin-left: 14px;
+  background: #68b738;
+  z-index: -1;
 }
 
 .column-comment__textarea-comment {
+  padding: 12px;
+  padding-right: 0;
+  // padding: 12px;
   box-sizing: border-box;
   width: 100%;
-  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
   // text-transform: uppercase;
+  outline: 0;
 }
 
 .column-comment__textarea-comment::placeholder {
-  padding: 10px;
-  font-family: "Oswald", "Arial Narrow", sans-serif;
+  // padding: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -29,16 +59,47 @@
 
 @media (min-width: $tablet-width) {
   .column-comment {
+    margin-bottom: 67px;
     width: 100%;
   }
 
   .column-comment__label-comment {
+    margin-left: -40px;
+    margin-bottom: 73px;
+    padding-left: 40px;
+    max-width: 220px;
     font-size: 36px;
     line-height: 36px;
+    background-color: #ffffff;
+  }
+
+  .column-comment__label-comment::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100vw;
+    height: 3px;
+    background: #68b738;
+    z-index: -1;
+  }
+
+  .column-comment__label-comment::after {
+    top: 32px;
+  }
+
+  .column-comment__textarea-comment {
+    min-height: 175px;
   }
 
   .column-comment__textarea-comment::placeholder {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .column-comment {
+    margin-bottom: 69px;
   }
 }
