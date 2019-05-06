@@ -49,6 +49,14 @@
   color: #444444;
 }
 
+.more-product__more:hover {
+  background-color: #ebebeb;
+}
+
+.more-product__more:active {
+  color: rgba(#444444, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .more-product {
     display: flex;

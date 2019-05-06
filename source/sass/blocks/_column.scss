@@ -1,21 +1,37 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  // padding-left: 40px;
+  // padding-right: 37px;
+  border: none;
+  min-height: 161px;
+}
+
 .column__item {
   display: flex;
   align-items: center;
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .column {
     width: 100%;
+    margin-bottom: 71px;
+    min-height: 196px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .column {
     margin-right: auto;
-    width: 48%;
+    margin-bottom: 0;
+    width: 570px;
   }
 
   .input-age {

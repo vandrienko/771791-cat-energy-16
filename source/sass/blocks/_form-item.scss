@@ -2,18 +2,59 @@
   min-width: 140px;
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
-
+  // border: none;
+  border: 1px solid #cdcdcd;
   text-transform: uppercase;
+  outline: 0;
 }
 
+.item__input:hover,
+.column-comment__textarea-comment:hover {
+  cursor: pointer;
+  fill: #ff8282;
+}
+
+.item__input:active,
+.item__input:focus,
+.column-comment__textarea-comment:active,
+.column-comment__textarea-comment:focus {
+  border: 2px solid #444444;
+}
+
+.item__input:active:invalid,
+.item__input:focus:invalid {
+  border: 2px solid #ff8282;
+}
+
+.item__input:active + .item__icon-email path,
+.item__input:focus + .item__icon-email path,
+.item__input:active + .item__icon-phone path,
+.item__input:focus + .item__icon-phone path {
+  fill: #68b738;
+}
+
+.item__input:active:invalid + .item__icon-email path,
+.item__input:focus:invalid + .item__icon-email path,
+.item__input:active:invalid + .item__icon-phone path,
+.item__input:focus:invalid + .item__icon-phone path {
+  fill: #ff8282;
+}
+
+// .form-unit__input.invalid,
+// .form-unit__input:active:invalid,
+// .form-unit__input:focus:invalid {
+//   border-color: #ff8282;
+// }
+
 .item__input::placeholder {
-  padding: 10px;
+  // padding: 10px;
+  // padding-left: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -23,7 +64,7 @@
 }
 
 .item__label {
-  margin-right: 15px;
+  margin-right: 12px;
   white-space: nowrap;
   font-weight: 400;
   font-size: 16px;
@@ -35,8 +76,15 @@
 
 @media (min-width: $tablet-width) {
   .item__label {
+    margin-right: 14px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .item__input {
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-bottom: 15px;
   }
 
   .item__input::placeholder {

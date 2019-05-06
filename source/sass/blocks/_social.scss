@@ -19,6 +19,15 @@
   // border-bottom: 1px solid #d9d9d9;
 }
 
+.social__icon:hover {
+  fill: #68b738;
+}
+
+.social__icon:active,
+.social__icon:visited {
+  opacity: 0.3;
+}
+
 .social__item {
   // display: flex;
   // align-items: center;

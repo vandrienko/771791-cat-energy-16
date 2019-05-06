@@ -63,7 +63,16 @@
 
   .comparisons__button {
     font-size: 20px;
-    border-bottom: 1px dotted #d9d9d9;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted rgba(#111111, 0.25);
+  }
+
+  .comparisons__button:hover {
+    border-bottom: 1px solid rgba(#111111, 0.4);
+  }
+
+  .comparisons__button:active {
+    border-bottom: none;
   }
 
   .comparisons__button-later {
@@ -102,7 +111,17 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
     box-sizing: border-box;
+
     background-image: radial-gradient(#68b738 0, #68b738 4px, #ffffff 5px, #ffffff 100%);
+  }
+
+  .comparisons__toggle:hover {
+    box-shadow: 0 3px 5px rgba(#000000, 0.25);
+  }
+
+  .comparisons__toggle:active {
+    border: 2px solid #68b738;
+    box-shadow: 0 4px 5px rgba(#000000, 0.3);
   }
 }
 

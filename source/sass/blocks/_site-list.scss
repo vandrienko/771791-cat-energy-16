@@ -30,6 +30,14 @@
   color: #111111;
 }
 
+.site-list__link:hover {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
@@ -54,7 +62,7 @@
     line-height: 24px;
   }
 
-  .site-list__item--active a::after {
+  .site-list__item--active .site-list__link::after {
     content: "";
     position: absolute;
     left: 21px;
@@ -83,16 +91,15 @@
 @media (min-width: $desktop-width) {
   .site-list__link {
     padding: 10px 17px;
-    // width: 200px;
     font-size: 20px;
     color: #111111;
   }
 
-  .site-list__item:not(:last-child) {
-    // margin-right: 35px;
-  }
-
   .site-list__link--color {
     color: #ffffff;
+  }
+
+  .main-nav__list--index .site-list__link::after {
+    background-color: #ffffff;
   }
 }
