@@ -1,7 +1,6 @@
 .additional-product {
   overflow: hidden;
   margin-bottom: 35px;
-  // padding: 0 20px;
 }
 
 .additional-product__header {
@@ -11,7 +10,6 @@
   padding-bottom: 34px;
   border-bottom: 1px solid #d9d9d9;
   position: relative;
-  // background-image: linear-gradient(to bottom,transparent 0,transparent 13px,#68b738 13px,#68b738 16px,transparent 16px,transparent 100%);
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -79,19 +77,23 @@
   background-color: #63a73a;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .additional-product_bonus {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .additional-product {
-    // overflow: hidden;
     margin-bottom: 75px;
   }
 
   .additional-product__header {
     background-color: #ffffff;
-    // padding-left: 30px;
     width: 374px;
-    // padding-right: 40px;
     padding-left: 37px;
     font-size: 36px;
     line-height: 36px;
@@ -119,7 +121,6 @@
 
   .additional-product__item {
     display: flex;
-    // align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 27px 37px 28px 37px;
@@ -165,6 +166,13 @@
     align-items: center;
     min-width: 280px;
     min-height: 200px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .additional-product_bonus {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+    }
   }
 }
 
@@ -185,7 +193,6 @@
   }
 
   .additional-product__wrapper {
-    // margin: auto;
     width: 1220px;
     display: flex;
     align-items: flex-start;
@@ -230,7 +237,12 @@
     min-height: 289px;
     align-items: center;
     justify-content: flex-start;
-    // align-items: flex-end;
-    // margin-right: 0;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .additional-product_bonus {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }

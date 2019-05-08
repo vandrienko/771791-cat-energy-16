@@ -2,8 +2,14 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  border-bottom: 1px solid #d9d9d9;
-  // position: absolute;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 280px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -11,7 +17,6 @@
     display: flex;
     min-height: 70px;
     border: none;
-    // background-color: red;
   }
 
   .page-header__wrapper {
@@ -37,18 +42,10 @@
 
   .page-header__wrapper {
     min-width: 1220px;
-    // margin-bottom: 0px;
-    // max-width: 1300px;
   }
 
   .page-header--index {
     position: relative;
-    // background-color: aquamarine;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // width: 100%;
-    // padding-top: 30px;
   }
 
   .page-header--index::after {
@@ -64,6 +61,12 @@
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-header--index::after {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+    }
   }
 
   .logo-link__logo-image {

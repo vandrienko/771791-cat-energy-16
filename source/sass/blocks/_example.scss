@@ -1,6 +1,5 @@
 .example {
   background-color: #f2f2f2;
-  // margin-bottom: 27px;
   padding-bottom: 34px;
 }
 
@@ -47,23 +46,18 @@
 
   .example__achievement {
     margin-bottom: 231px;
-    // margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    // background-color: #f2f2f2;
     padding-bottom: 0;
     background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 1023px, #eaeaea 384px, #eaeaea);
-    // padding-top: 100px;
-    // background-color: #21eb1a;
   }
 
   .example__container--color {
     padding-top: 100px;
     margin-top: -100px;
-    // background-color: #f70b0b;
   }
 
   .example__title {
@@ -78,8 +72,6 @@
   .example__wrapper {
     display: flex;
     justify-content: space-between;
-    // background-color: #f2f2f2;
-    // background-image: linear-gradient(to right,#f2f2f2,#f2f2f2 384px,#eaeaea 384px,#eaeaea);
   }
 
   .example__text {
