@@ -8,11 +8,9 @@
 
 .achievement-item {
   margin: 0;
-  // padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-between;
 }
 
 .achievement__title {
@@ -65,12 +63,6 @@
     display: flex;
     justify-content: space-between;
     min-width: 369px;
-  }
-
-  .achievement-item {
-    // align-items: flex-start;
-    // justify-content: space-between;
-    // width: 200px;
   }
 
   .achievement__title {
