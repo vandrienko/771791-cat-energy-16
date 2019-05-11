@@ -18,6 +18,12 @@
   .form__wrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    // max-width: 1220px;
+    // justify-content: center;
+    // margin-left: auto;
+    // margin-right: auto;
     padding-left: 40px;
     padding-right: 37px;
   }
