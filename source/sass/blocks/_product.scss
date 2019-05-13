@@ -114,11 +114,16 @@
   }
 
   .product__value {
+    width: 120px;
     font-size: 16px;
+    // margin-right: auto;
   }
 
   .product__data {
+    width: 120px;
     font-size: 16px;
+    // margin-left: auto;
+    // text-align: right;
   }
 }
 

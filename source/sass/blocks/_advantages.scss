@@ -37,6 +37,10 @@
   font-family: "Arial", "Oswald", sans-serif;
 }
 
+.advantages__item--br br {
+  display: none;
+}
+
 .advantages__item::before {
   content: "";
   position: absolute;
@@ -117,6 +121,10 @@
     font-family: "Oswald", "Arial", sans-serif;
     color: #f2f2f2;
     z-index: -1;
+  }
+
+  .advantages__item--br br {
+    display: block;
   }
 }
 
