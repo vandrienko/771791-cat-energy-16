@@ -10,6 +10,7 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso"); //Минифицируем CSS
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin"); // Оптимизируем изображения
+var webp = require("gulp-webp"); //Создаём WebP-изображение
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -40,7 +41,7 @@ gulp.task("server", function () {
 
 gulp.task("start", gulp.series("css", "server"));
 
-
+// Оптимизация изображений
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -50,3 +51,11 @@ gulp.task("images", function () {
     ]))
     .pipe(gulp.dest("source/img"));
 });
+
+
+//Создаём WebP-изображения
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
+  });
