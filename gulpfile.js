@@ -12,6 +12,7 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin"); // Оптимизируем изображения
 var webp = require("gulp-webp"); //Создаём WebP-изображение
 var svgstore = require("gulp-svgstore"); //Соберём SVG-спрайт
+
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
