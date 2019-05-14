@@ -12,6 +12,8 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin"); // Оптимизируем изображения
 var webp = require("gulp-webp"); //Создаём WebP-изображение
 var svgstore = require("gulp-svgstore"); //Соберём SVG-спрайт
+var posthtml = require("gulp-posthtml");  //Для добавления svg в разметку
+var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -70,4 +72,13 @@ gulp.task("sprite", function () {
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"));
+});
+
+//Для добавления svg в разметку
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+  .pipe(posthtml([
+    include()
+  ]))
+  .pipe(gulp.dest("source"));
 });
