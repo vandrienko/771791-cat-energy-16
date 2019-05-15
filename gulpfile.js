@@ -24,29 +24,13 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-
-gulp.task("server", function () {
-  server.init({
-    server: "build/"
-  });
-
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/*.html", gulp.series("html", "refresh"));
-});
-
-gulp.task("refresh", function (done) {
-  server.reload();
-  done();
-});
-
-gulp.task("start", gulp.series("build", "server"));
 
 // Оптимизация изображений
 gulp.task("images", function () {
@@ -107,8 +91,25 @@ gulp.task("clean", function () {
 // запуск билда
 gulp.task("build", gulp.series(
   "clean",
-  "copy"
-  // "css",
-  // "sprite",
-  // "html"
+  "copy",
+  "css",
+  "sprite",
+  "html"
   ));
+
+gulp.task("server", function () {
+  server.init({
+    server: "build/"
+  });
+
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+});
+
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
+});
+
+gulp.task("start", gulp.series("build", "server"));
