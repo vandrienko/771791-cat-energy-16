@@ -97,19 +97,23 @@ gulp.task("build", gulp.series(
   "html"
   ));
 
-gulp.task("server", function () {
-  server.init({
-    server: "build/"
-  });
-
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/*.html", gulp.series("html", "refresh"));
-});
-
 gulp.task("refresh", function (done) {
   server.reload();
   done();
+});
+
+gulp.task("server", function () {
+  server.init({
+    server: "build/"
+    // notify: false,
+    // open: true,
+    // cors: true,
+    // ui: false
+});
+
+gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
 gulp.task("start", gulp.series("build", "server"));

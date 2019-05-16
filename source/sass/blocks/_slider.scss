@@ -15,7 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .slider {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
   .image-cat {
@@ -26,5 +26,12 @@
     margin-bottom: 0;
     text-align: center;
     margin-top: -171px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .image-cat{
+    margin-top: -210px;
+    margin-bottom: 20px;
   }
 }

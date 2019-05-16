@@ -89,7 +89,7 @@
   }
 
   .intro__slogan {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
@@ -118,7 +118,7 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-bottom: 57px;
+    margin-bottom: 55px;
   }
 
   .intro__wrapper {
@@ -132,12 +132,13 @@
   }
 
   .intro__title {
+    margin-bottom: 29px;
     padding-top: 77px;
     padding-right: 10px;
   }
 
   .intro__slogan {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .intro__image-wrapper {

@@ -91,7 +91,7 @@
   }
 
   .comparisons__toggle {
-    margin-left: 200px;
+    margin-left: 196px;
     width: 34px;
     height: 34px;
     background-color: #ffffff;
@@ -114,11 +114,15 @@
 
 @media (min-width: $desktop-width) {
   .comparisons {
-    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 379px, #eaeaea 372px, #eaeaea);
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 342px, #eaeaea 310px, #eaeaea);
   }
 
   .comparisons__range {
-    max-width: 510px;
+    max-width: 545px;
     margin-bottom: 0;
+  }
+
+  .comparisons__toggle {
+    margin-left: 198px;
   }
 }
