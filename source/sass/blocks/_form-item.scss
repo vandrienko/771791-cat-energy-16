@@ -33,18 +33,19 @@
   border: 2px solid #ff8282;
 }
 
-.item__input:active + .item__icon-email path,
-.item__input:focus + .item__icon-email path,
-.item__input:active + .item__icon-phone path,
-.item__input:focus + .item__icon-phone path {
-  fill: #68b738;
+.item__input:active:invalid + .item__icon-email,
+.item__input:focus:invalid + .item__icon-email,
+.item__input:active:invalid + .item__icon-phone,
+.item__input:focus:invalid + .item__icon-phone {
+  fill: #ff8282;
 }
 
-.item__input:active:invalid + .item__icon-email path,
-.item__input:focus:invalid + .item__icon-email path,
-.item__input:active:invalid + .item__icon-phone path,
-.item__input:focus:invalid + .item__icon-phone path {
-  fill: #ff8282;
+
+.item__input:active + .item__icon-email,
+.item__input:focus + .item__icon-email,
+.item__input:active + .item__icon-phone,
+.item__input:focus + .item__icon-phone {
+  fill: #68b738;
 }
 
 .item__input::placeholder {

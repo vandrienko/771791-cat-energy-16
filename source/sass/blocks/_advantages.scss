@@ -9,7 +9,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom:11px;
+  margin-bottom: 11px;
   font-weight: 400;
 
   font-size: 36px;
@@ -54,25 +54,25 @@
 }
 
 .advantages__item--useful-nutrients::before {
-  background-image: url("../../img/advantage-leaf@1x.png");
+  background-image: url("../img/advantage-leaf@1x.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .advantages__item--powder::before {
-  background-image: url("../../img/advantage-powder@1x.png");
+  background-image: url("../img/advantage-powder@1x.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .advantages__item--reception-food::before {
-  background-image: url("../../img/advantage-dining@1x.png");
+  background-image: url("../img/advantage-dining@1x.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .advantages__item--result::before {
-  background-image: url("../../img/advantage-clock@1x.png");
+  background-image: url("../img/advantage-clock@1x.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -87,6 +87,7 @@
     padding-bottom: 4px;
     border-bottom: 1px solid #d9d9d9;
   }
+
   .advantages__title {
     margin-bottom: 29px;
     font-size: 60px;
