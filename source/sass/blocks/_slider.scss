@@ -1,7 +1,37 @@
 .slider {
   display: flex;
+  margin-bottom: 29px;
+}
+
+
+.image--cat-to {
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .cat-later {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    margin-bottom: 16px;
+  }
+
+  .image-cat {
+    width: 680px;
+    height: 517px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: -171px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .image-cat {
+    margin-top: -210px;
+    margin-bottom: 20px;
+  }
 }

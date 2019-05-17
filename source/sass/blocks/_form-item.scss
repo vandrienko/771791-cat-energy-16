@@ -2,7 +2,9 @@
   min-width: 140px;
   box-sizing: border-box;
   width: 100%;
+  max-height: 52px;
   padding: 12px;
+  padding-left: 15px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -31,18 +33,19 @@
   border: 2px solid #ff8282;
 }
 
-.item__input:active + .item__icon-email path,
-.item__input:focus + .item__icon-email path,
-.item__input:active + .item__icon-phone path,
-.item__input:focus + .item__icon-phone path {
-  fill: #68b738;
+.item__input:active:invalid + .item__icon-email,
+.item__input:focus:invalid + .item__icon-email,
+.item__input:active:invalid + .item__icon-phone,
+.item__input:focus:invalid + .item__icon-phone {
+  fill: #ff8282;
 }
 
-.item__input:active:invalid + .item__icon-email path,
-.item__input:focus:invalid + .item__icon-email path,
-.item__input:active:invalid + .item__icon-phone path,
-.item__input:focus:invalid + .item__icon-phone path {
-  fill: #ff8282;
+
+.item__input:active + .item__icon-email,
+.item__input:focus + .item__icon-email,
+.item__input:active + .item__icon-phone,
+.item__input:focus + .item__icon-phone {
+  fill: #68b738;
 }
 
 .item__input::placeholder {
@@ -55,7 +58,7 @@
 }
 
 .item__label {
-  margin-right: 12px;
+  margin-right: 14px;
   white-space: nowrap;
   font-weight: 400;
   font-size: 16px;
@@ -67,14 +70,14 @@
 
 @media (min-width: $tablet-width) {
   .item__label {
-    margin-right: 14px;
+    margin-right: 19px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .item__input {
-    padding-top: 17px;
-    padding-left: 17px;
+    padding-top: 20px;
+    padding-left: 19px;
     padding-bottom: 15px;
   }
 

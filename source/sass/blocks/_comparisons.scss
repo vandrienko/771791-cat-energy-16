@@ -44,13 +44,6 @@
   background-color: #68b738;
 }
 
-// .comparisons-image {
-//   margin-left: -20px;
-//   margin-right: -20px;
-//   margin-bottom: 29px;
-//   text-align: center;
-// }
-
 @media (min-width: $tablet-width) {
   .comparisons {
     margin-left: -30px;
@@ -61,6 +54,7 @@
   }
 
   .comparisons__button {
+    min-width: 51px;
     font-size: 20px;
     padding-bottom: 6px;
     border-bottom: 1px dotted rgba(#111111, 0.25);
@@ -78,11 +72,6 @@
     background-color: #eaeaea;
   }
 
-  // .comparisons-image {
-  //   margin-bottom: 19px;
-  //   margin-top: -171px;
-  // }
-
   .comparisons__cat-to {
     width: 672px;
     height: 516px;
@@ -90,7 +79,7 @@
 
   .comparisons__range {
     max-width: 578px;
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 
   .comparisons__progress {
@@ -102,7 +91,7 @@
   }
 
   .comparisons__toggle {
-    margin-left: 200px;
+    margin-left: calc(50% - 18px);
     width: 34px;
     height: 34px;
     background-color: #ffffff;
@@ -125,16 +114,15 @@
 
 @media (min-width: $desktop-width) {
   .comparisons {
-    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 379px, #eaeaea 372px, #eaeaea);
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 342px, #eaeaea 310px, #eaeaea);
   }
 
-  // .comparisons-image {
-  //   margin-top: -190px;
-  //   margin-bottom: 37px;
-  // }
-
   .comparisons__range {
-    max-width: 510px;
+    max-width: 545px;
     margin-bottom: 0;
+  }
+
+  .comparisons__toggle {
+    margin-left: 198px;
   }
 }
