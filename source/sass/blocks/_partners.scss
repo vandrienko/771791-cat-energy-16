@@ -53,7 +53,8 @@
   .partners {
     position: absolute;
     top: 98px;
-    left: 41px;
+    left: 0;
+    margin-left: calc((100vw - 1300px)/2 + 32px);
     align-items: center;
     padding-top: 2px;
     padding-right: 83px;

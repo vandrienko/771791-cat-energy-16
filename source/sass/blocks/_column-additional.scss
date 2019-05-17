@@ -62,14 +62,13 @@
 }
 
 .additional-item__input:checked + .additional-item__label::before {
-  background: url("../../img/icon-tick.svg");
+  background: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 21px;
 }
 
-.additional-item__input:disabled + .additional-item__label::before,
-.additional-item__input:disabled + .additional-item__label::after {
+.additional-item__input:disabled + .additional-item__label {
   opacity: 0.3;
 }
 

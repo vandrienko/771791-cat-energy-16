@@ -44,7 +44,8 @@
     opacity: 0.8;
   }
 
-  .page-footer__logo-link:active {
+  .page-footer__logo-link:active,
+  .page-footer__logo-link:focus {
     opacity: 0.6;
   }
 }
