@@ -7,15 +7,11 @@
 
 .social__list {
   display: flex;
-  // justify-content: center;
   flex-wrap: wrap;
   margin: 0;
-  // margin-right: -20px;
-  // margin-left: -20px;
   padding: 0;
   padding-top: 24px;
   padding-bottom: 16px;
-  // min-width: 134px;
 }
 
 .social__icon:hover {
@@ -28,7 +24,6 @@
 }
 
 .social__item {
-  // display: flex;
   margin-right: 18px;
   margin-left: 18px;
 
@@ -37,18 +32,14 @@
   list-style: none;
 }
 
-.social__link {
-  // display: block;
-  // margin-right: 10px;
-  // margin-left: 10px;
-  // padding-left: 10px;
-  // padding-right: 10px;
-}
-
 @media (min-width: $tablet-width) {
   .social {
     border: none;
-    width: 150px;
+    max-width: 170px;
+  }
+
+  .social__list {
+    padding-top: 64px;
   }
 
   .social__icon--vkontakte {
@@ -67,5 +58,11 @@
     height: 28px;
     margin-top: -5px;
     margin-left: -9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding-top: 70px;
   }
 }
