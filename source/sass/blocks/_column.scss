@@ -6,7 +6,6 @@
   margin-bottom: 23px;
   padding: 0;
   border: none;
-  height: 1px;
   min-height: 163px;
 }
 
@@ -20,7 +19,7 @@
 @media (min-width: $tablet-width) {
   .column {
     width: 100%;
-    margin-bottom: 71px;
+    margin-bottom: 72px;
     min-height: 196px;
   }
 }
@@ -30,6 +29,10 @@
     margin-right: auto;
     margin-bottom: 0;
     width: 570px;
+  }
+
+  .column__item:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .input-age {

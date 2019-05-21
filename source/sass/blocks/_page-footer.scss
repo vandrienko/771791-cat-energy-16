@@ -10,8 +10,8 @@
 
 .page-footer__logo-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 100%;
   padding-top: 40px;
   padding-bottom: 31px;
@@ -25,10 +25,9 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     margin: auto;
     justify-content: space-between;
-    height: 1px;
     min-height: 150px;
   }
 
@@ -37,7 +36,7 @@
     justify-content: flex-start;
     width: 163px;
     border: none;
-    padding-top: 35px;
+    padding-top: 63px;
   }
 
   .page-footer__logo-link:hover {
@@ -53,5 +52,10 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     min-height: 160px;
+  }
+
+  .page-footer__logo-link {
+    padding-top: 70px;
+    vertical-align: middle;
   }
 }

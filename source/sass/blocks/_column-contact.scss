@@ -116,8 +116,9 @@
   .column-contact {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 40px;
-    margin-bottom: 69px;
+    margin-bottom: 59px;
   }
 
   .column-contact__contact-title {
@@ -130,10 +131,11 @@
 
   .column-contact__item {
     width: 571px;
+    margin-bottom: 11px;
   }
 
   .item-email {
-    margin-right: auto;
-    margin-bottom: 0;
+    // margin-right: auto;
+    // margin-bottom: 0;
   }
 }
